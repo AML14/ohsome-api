@@ -1,15 +1,5 @@
 package org.heigit.ohsome.ohsomeapi.executor;
 
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.core.JsonEncoding;
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.core.util.DefaultIndenter;
-import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.opencsv.CSVWriter;
-import com.zaxxer.hikari.HikariDataSource;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.Serializable;
@@ -92,6 +82,17 @@ import org.locationtech.jts.geom.Lineal;
 import org.locationtech.jts.geom.Polygonal;
 import org.locationtech.jts.geom.Puntal;
 import org.wololo.jts2geojson.GeoJSONWriter;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.core.JsonEncoding;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.util.DefaultIndenter;
+import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.common.collect.Iterables;
+import com.opencsv.CSVWriter;
+import com.zaxxer.hikari.HikariDataSource;
 
 /** Holds helper methods that are used by the executor classes. */
 public class ExecutionUtils {
@@ -385,28 +386,17 @@ public class ExecutionUtils {
 
   /** Creates the <code>Feature</code> objects in the OSM data response. */
   public org.wololo.geojson.Feature createOSMFeature(OSMEntity entity, Geometry geometry,
-      Map<String, Object> properties, int[] keysInt, boolean includeTags,
+      Map<String, Object> properties, Set<Integer> keysInt, boolean includeTags,
       boolean includeOSMMetadata, ElementsGeometry elemGeom) {
     if (geometry.isEmpty()) {
       // skip invalid geometries (e.g. ways with 0 nodes)
       return null;
     }
     if (includeTags) {
-      for (OSHDBTag oshdbTag : entity.getTags()) {
-        properties.put(String.valueOf(oshdbTag.getKey()), oshdbTag);
-      }
-    } else if (keysInt.length != 0) {
-      int[] tags = entity.getRawTags();
-      for (int i = 0; i < tags.length; i += 2) {
-        int tagKeyId = tags[i];
-        int tagValueId = tags[i + 1];
-        for (int key : keysInt) {
-          if (tagKeyId == key) {
-            properties.put(String.valueOf(tagKeyId), new OSHDBTag(tagKeyId, tagValueId));
-            break;
-          }
-        }
-      }
+      properties.put("@tags", Iterables.toArray(entity.getTags(), OSHDBTag.class));
+    } else if (!keysInt.isEmpty()) {
+      Iterable<OSHDBTag> filtered = Iterables.filter(entity.getTags(), t -> keysInt.contains(t.getKey()));
+      properties.put("@tags", Iterables.toArray(filtered, OSHDBTag.class));
     }
     properties.put("@osmId", entity.getType().toString().toLowerCase() + "/" + entity.getId());
     if (includeOSMMetadata) {
@@ -716,17 +706,17 @@ public class ExecutionUtils {
       int tagValueId = tags[i + 1];
       if (tagKeyId == keysInt) {
         if (valuesInt.length == 0) {
-          return new ImmutablePair<>(new ImmutablePair<Integer, Integer>(tagKeyId, tagValueId), f);
+          return new ImmutablePair<>(new ImmutablePair<>(tagKeyId, tagValueId), f);
         }
         for (int value : valuesInt) {
           if (tagValueId == value) {
-            return new ImmutablePair<>(new ImmutablePair<Integer, Integer>(tagKeyId, tagValueId),
+            return new ImmutablePair<>(new ImmutablePair<>(tagKeyId, tagValueId),
                 f);
           }
         }
       }
     }
-    return new ImmutablePair<>(new ImmutablePair<Integer, Integer>(-1, -1), f);
+    return new ImmutablePair<>(new ImmutablePair<>(-1, -1), f);
   }
 
   /** Creates a RatioResponse. */
@@ -978,21 +968,13 @@ public class ExecutionUtils {
     ForkJoinPool threadPool = new ForkJoinPool(ProcessingData.getNumberOfDataExtractionThreads());
     try {
       threadPool.submit(() -> stream.parallel().map(data -> {
-        // 0. resolve tags
-        Map<String, Object> tags = data.getProperties();
-        List<String> keysToDelete = new LinkedList<>();
-        List<OSMTag> tagsToAdd = new LinkedList<>();
-        for (Entry<String, Object> tag : tags.entrySet()) {
-          String key = tag.getKey();
-          if (key.charAt(0) != '@') {
-            keysToDelete.add(key);
-            tagsToAdd.add(tts.get().getOSMTagOf((OSHDBTag) tag.getValue()));
-          }
+        Map<String, Object> props = data.getProperties();
+        OSHDBTag[] tags = (OSHDBTag[]) props.remove("@tags");
+        for (OSHDBTag tag : tags) {
+           OSMTag osmTag = tts.get().getOSMTagOf(tag);
+           props.put(osmTag.getKey(), osmTag.getValue());
         }
-        tags.keySet().removeAll(keysToDelete);
-        for (OSMTag tag : tagsToAdd) {
-          tags.put(tag.getKey(), tag.getValue());
-        }
+
         // 1. convert features to geojson
         try {
           outputBuffers.get().reset();

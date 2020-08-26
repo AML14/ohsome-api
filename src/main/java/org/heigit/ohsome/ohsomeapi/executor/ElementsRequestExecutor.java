@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.EnumSet;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -115,11 +116,14 @@ public class ElementsRequestExecutor {
     RequestParameters requestParameters = processingData.getRequestParameters();
     TagTranslator tt = DbConnData.tagTranslator;
     String[] keys = requestParameters.getKeys();
-    int[] keysInt = new int[keys.length];
+    final Set<Integer> keysInt;
     if (keys.length != 0) {
+      keysInt = new HashSet<>(keys.length);
       for (int i = 0; i < keys.length; i++) {
-        keysInt[i] = tt.getOSHDBTagKeyOf(keys[i]).toInt();
+        keysInt.add(tt.getOSHDBTagKeyOf(keys[i]).toInt());
       }
+    }else {
+      keysInt = Collections.emptySet();
     }
     final MapReducer<Feature> preResult;
     ExecutionUtils exeUtils = new ExecutionUtils(processingData);
@@ -196,11 +200,14 @@ public class ElementsRequestExecutor {
     }
     TagTranslator tt = DbConnData.tagTranslator;
     String[] keys = requestParameters.getKeys();
-    int[] keysInt = new int[keys.length];
+    Set<Integer> keysInt;
     if (keys.length != 0) {
+      keysInt = new HashSet<>(keys.length);
       for (int i = 0; i < keys.length; i++) {
-        keysInt[i] = tt.getOSHDBTagKeyOf(keys[i]).toInt();
+        keysInt.add(tt.getOSHDBTagKeyOf(keys[i]).toInt());
       }
+    }else {
+      keysInt = Collections.emptySet();
     }
     MapReducer<Feature> contributionPreResult = null;
     ExecutionUtils exeUtils = new ExecutionUtils(processingData);
@@ -550,7 +557,7 @@ public class ElementsRequestExecutor {
     if (groupByValues.length != 0) {
       for (int j = 0; j < groupByValues.length; j++) {
         valuesInt[j] = tt.getOSHDBTagOf(groupByKey[0], groupByValues[j]).getValue();
-        zeroFill.add(new ImmutablePair<Integer, Integer>(keysInt, valuesInt[j]));
+        zeroFill.add(new ImmutablePair<>(keysInt, valuesInt[j]));
       }
     }
     ArrayList<Geometry> arrGeoms = new ArrayList<>(processingData.getBoundaryList());
@@ -664,7 +671,7 @@ public class ElementsRequestExecutor {
     if (groupByValues.length != 0) {
       for (int j = 0; j < groupByValues.length; j++) {
         valuesInt[j] = tt.getOSHDBTagOf(groupByKey[0], groupByValues[j]).getValue();
-        zeroFill.add(new ImmutablePair<Integer, Integer>(keysInt, valuesInt[j]));
+        zeroFill.add(new ImmutablePair<>(keysInt, valuesInt[j]));
       }
     }
     MapAggregator<OSHDBCombinedIndex<OSHDBTimestamp, Pair<Integer, Integer>>, OSMEntitySnapshot> preResult =
