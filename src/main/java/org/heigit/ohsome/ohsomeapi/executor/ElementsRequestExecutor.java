@@ -557,7 +557,7 @@ public class ElementsRequestExecutor {
     if (groupByValues.length != 0) {
       for (int j = 0; j < groupByValues.length; j++) {
         valuesInt[j] = tt.getOSHDBTagOf(groupByKey[0], groupByValues[j]).getValue();
-        zeroFill.add(new ImmutablePair<>(keysInt, valuesInt[j]));
+        zeroFill.add(new ImmutablePair<Integer, Integer>(keysInt, valuesInt[j]));
       }
     }
     ArrayList<Geometry> arrGeoms = new ArrayList<>(processingData.getBoundaryList());
@@ -671,7 +671,7 @@ public class ElementsRequestExecutor {
     if (groupByValues.length != 0) {
       for (int j = 0; j < groupByValues.length; j++) {
         valuesInt[j] = tt.getOSHDBTagOf(groupByKey[0], groupByValues[j]).getValue();
-        zeroFill.add(new ImmutablePair<>(keysInt, valuesInt[j]));
+        zeroFill.add(new ImmutablePair<Integer, Integer>(keysInt, valuesInt[j]));
       }
     }
     MapAggregator<OSHDBCombinedIndex<OSHDBTimestamp, Pair<Integer, Integer>>, OSMEntitySnapshot> preResult =

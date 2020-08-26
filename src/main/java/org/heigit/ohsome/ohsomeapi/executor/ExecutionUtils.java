@@ -1,5 +1,16 @@
 package org.heigit.ohsome.ohsomeapi.executor;
 
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.core.JsonEncoding;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.util.DefaultIndenter;
+import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.common.collect.Iterables;
+import com.opencsv.CSVWriter;
+import com.zaxxer.hikari.HikariDataSource;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.Serializable;
@@ -82,17 +93,6 @@ import org.locationtech.jts.geom.Lineal;
 import org.locationtech.jts.geom.Polygonal;
 import org.locationtech.jts.geom.Puntal;
 import org.wololo.jts2geojson.GeoJSONWriter;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.core.JsonEncoding;
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.core.util.DefaultIndenter;
-import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.google.common.collect.Iterables;
-import com.opencsv.CSVWriter;
-import com.zaxxer.hikari.HikariDataSource;
 
 /** Holds helper methods that are used by the executor classes. */
 public class ExecutionUtils {
@@ -706,17 +706,17 @@ public class ExecutionUtils {
       int tagValueId = tags[i + 1];
       if (tagKeyId == keysInt) {
         if (valuesInt.length == 0) {
-          return new ImmutablePair<>(new ImmutablePair<>(tagKeyId, tagValueId), f);
+          return new ImmutablePair<>(new ImmutablePair<Integer, Integer>(tagKeyId, tagValueId), f);
         }
         for (int value : valuesInt) {
           if (tagValueId == value) {
-            return new ImmutablePair<>(new ImmutablePair<>(tagKeyId, tagValueId),
+            return new ImmutablePair<>(new ImmutablePair<Integer, Integer>(tagKeyId, tagValueId),
                 f);
           }
         }
       }
     }
-    return new ImmutablePair<>(new ImmutablePair<>(-1, -1), f);
+    return new ImmutablePair<>(new ImmutablePair<Integer, Integer>(-1, -1), f);
   }
 
   /** Creates a RatioResponse. */
@@ -970,9 +970,11 @@ public class ExecutionUtils {
       threadPool.submit(() -> stream.parallel().map(data -> {
         Map<String, Object> props = data.getProperties();
         OSHDBTag[] tags = (OSHDBTag[]) props.remove("@tags");
-        for (OSHDBTag tag : tags) {
-           OSMTag osmTag = tts.get().getOSMTagOf(tag);
-           props.put(osmTag.getKey(), osmTag.getValue());
+        if(tags !=  null) {
+          for (OSHDBTag tag : tags) {
+             OSMTag osmTag = tts.get().getOSMTagOf(tag);
+             props.put(osmTag.getKey(), osmTag.getValue());
+          }
         }
 
         // 1. convert features to geojson
