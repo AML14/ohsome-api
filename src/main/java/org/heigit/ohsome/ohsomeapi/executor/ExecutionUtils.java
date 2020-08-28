@@ -970,7 +970,7 @@ public class ExecutionUtils {
       threadPool.submit(() -> stream.parallel().map(data -> {
         Map<String, Object> props = data.getProperties();
         OSHDBTag[] tags = (OSHDBTag[]) props.remove("@tags");
-        if(tags !=  null) {
+        if (tags != null) {
           for (OSHDBTag tag : tags) {
              OSMTag osmTag = tts.get().getOSMTagOf(tag);
              props.put(osmTag.getKey(), osmTag.getValue());
