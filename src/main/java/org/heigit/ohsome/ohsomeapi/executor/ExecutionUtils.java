@@ -979,7 +979,8 @@ public class ExecutionUtils {
         if (tags != null) {
           for (OSHDBTag tag : tags) {
              OSMTag osmTag = tts.get().getOSMTagOf(tag);
-             props.putIfAbsent(osmTag.getKey(), osmTag.getValue());
+             String key = osmTag.getKey();
+             props.put((key.startsWith("@"))?"@"+key:key, osmTag.getValue());
           }
         }
 
