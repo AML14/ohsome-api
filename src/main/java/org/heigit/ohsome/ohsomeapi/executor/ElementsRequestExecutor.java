@@ -116,15 +116,7 @@ public class ElementsRequestExecutor {
     RequestParameters requestParameters = processingData.getRequestParameters();
     TagTranslator tt = DbConnData.tagTranslator;
     String[] keys = requestParameters.getKeys();
-    final Set<Integer> keysInt;
-    if (keys.length != 0) {
-      keysInt = new HashSet<>(keys.length);
-      for (int i = 0; i < keys.length; i++) {
-        keysInt.add(tt.getOSHDBTagKeyOf(keys[i]).toInt());
-      }
-    } else {
-      keysInt = Collections.emptySet();
-    }
+    final Set<Integer> keysInt = keysToKeysInt(keys, tt);
     final MapReducer<Feature> preResult;
     ExecutionUtils exeUtils = new ExecutionUtils(processingData);
     preResult = mapRed.map(snapshot -> {
@@ -152,6 +144,19 @@ public class ElementsRequestExecutor {
     try (Stream<Feature> streamResult = preResult.stream()) {
       exeUtils.streamElementsResponse(servletResponse, osmData, false, streamResult, null);
     }
+  }
+
+  private static Set<Integer> keysToKeysInt(String[] keys, TagTranslator tt) {
+    final Set<Integer> keysInt;
+    if (keys.length != 0) {
+      keysInt = new HashSet<>(keys.length);
+      for (int i = 0; i < keys.length; i++) {
+        keysInt.add(tt.getOSHDBTagKeyOf(keys[i]).toInt());
+      }
+    } else {
+      keysInt = Collections.emptySet();
+    }
+    return keysInt;
   }
 
   /**
@@ -200,15 +205,7 @@ public class ElementsRequestExecutor {
     }
     TagTranslator tt = DbConnData.tagTranslator;
     String[] keys = requestParameters.getKeys();
-    Set<Integer> keysInt;
-    if (keys.length != 0) {
-      keysInt = new HashSet<>(keys.length);
-      for (int i = 0; i < keys.length; i++) {
-        keysInt.add(tt.getOSHDBTagKeyOf(keys[i]).toInt());
-      }
-    } else {
-      keysInt = Collections.emptySet();
-    }
+    Set<Integer> keysInt = keysToKeysInt(keys, tt);
     MapReducer<Feature> contributionPreResult = null;
     ExecutionUtils exeUtils = new ExecutionUtils(processingData);
     inputProcessor.processPropertiesParam();
