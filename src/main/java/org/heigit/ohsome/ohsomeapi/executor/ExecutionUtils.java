@@ -978,9 +978,9 @@ public class ExecutionUtils {
         OSHDBTag[] tags = (OSHDBTag[]) props.remove("@tags");
         if (tags != null) {
           for (OSHDBTag tag : tags) {
-             OSMTag osmTag = tts.get().getOSMTagOf(tag);
-             String key = osmTag.getKey();
-             props.put((key.startsWith("@")) ? "@" + key : key, osmTag.getValue());
+            OSMTag osmTag = tts.get().getOSMTagOf(tag);
+            String key = osmTag.getKey();
+            props.put((key.startsWith("@")) ? "@" + key : key, osmTag.getValue());
           }
         }
 
