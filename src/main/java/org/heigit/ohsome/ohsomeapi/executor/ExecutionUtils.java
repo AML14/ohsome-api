@@ -980,7 +980,7 @@ public class ExecutionUtils {
           for (OSHDBTag tag : tags) {
              OSMTag osmTag = tts.get().getOSMTagOf(tag);
              String key = osmTag.getKey();
-             props.put((key.startsWith("@"))?"@"+key:key, osmTag.getValue());
+             props.put((key.startsWith("@")) ? "@" + key : key, osmTag.getValue());
           }
         }
 
