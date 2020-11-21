@@ -33,6 +33,9 @@
     <oshdb.version>0.5.10</oshdb.version>
     <springboot.version>2.0.3.RELEASE</springboot.version>
     <springfox.version>2.9.2</springfox.version>
+
+    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
   </properties>
 
   <dependencies>
@@ -170,6 +173,17 @@
       <version>1.18.16</version>
       <scope>provided</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.evomaster</groupId>
+      <artifactId>evomaster-client-java-controller</artifactId>
+      <version>1.0.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>4.3.0</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -197,6 +211,12 @@
             </manifestEntries>
           </archive>
         </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
       </plugin>
     </plugins>
     <resources>
