@@ -1,0 +1,5849 @@
+{
+  "info": {
+    "_postman_id": "167d285e-e2dc-4b69-be71-c7dad53e080b",
+    "name": "ohsome_1_per_op",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "test_qeeycxsol8bo_area",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area?time=2010-04-10&bpolys=PUoFQ%3A8.704561%2C49.403252%2C8.7411%2C49.4357%2C8.701%2C49.418%2C8.702%2C49.4225%2C8.704561%2C49.403252%7CQG%3A8.704561%2C49.403252%2C8.748%2C49.42822%2C8.70085%2C49.4307%2C8.734%2C49.422702%2C8.704561%2C49.403252%7CAIEqU%3A8.704561%2C49.403252%2C8.7322%2C49.415111%2C8.70613%2C49.42344%2C8.7359%2C49.424%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area"
+          ],
+          "query": [
+            {
+              "key": "time",
+              "value": "2010-04-10"
+            },
+            {
+              "key": "bpolys",
+              "value": "PUoFQ%3A8.704561%2C49.403252%2C8.7411%2C49.4357%2C8.701%2C49.418%2C8.702%2C49.4225%2C8.704561%2C49.403252%7CQG%3A8.704561%2C49.403252%2C8.748%2C49.42822%2C8.70085%2C49.4307%2C8.734%2C49.422702%2C8.704561%2C49.403252%7CAIEqU%3A8.704561%2C49.403252%2C8.7322%2C49.415111%2C8.70613%2C49.42344%2C8.7359%2C49.424%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1iukdcg05ee60_area1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area?keys=highway&format=csv&showMetadata=no&time=2015-06-09&bpolys=aU%3A8.704561%2C49.403252%2C8.720%2C49.401%2C8.7107%2C49.433815%2C8.70959%2C49.4361%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2015-06-09"
+            },
+            {
+              "key": "bpolys",
+              "value": "aU%3A8.704561%2C49.403252%2C8.720%2C49.401%2C8.7107%2C49.433815%2C8.70959%2C49.4361%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1iyi9pzcsn582_areaDensity",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/density?keys=highway&values=tertiary&format=csv&showMetadata=no&timeout=97&bcircles=amj%3A8.72837%2C49.408158%2C7%7CufSu%3A8.7248%2C49.433%2C7",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "density"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "tertiary"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "timeout",
+              "value": "97"
+            },
+            {
+              "key": "bcircles",
+              "value": "amj%3A8.72837%2C49.408158%2C7%7CufSu%3A8.7248%2C49.433%2C7"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1iyq347ffuiib_areaDensity1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/density?bboxes=sW%3A8.673%2C49.4047%2C8.7133%2C49.3962&keys=highway&timeout=65",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "density"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "sW%3A8.673%2C49.4047%2C8.7133%2C49.3962"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "timeout",
+              "value": "65"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t4q5r3sw0bas_areaDensityGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/density/groupBy/boundary?format=json&showMetadata=false&bpolys=lV%3A8.704561%2C49.403252%2C8.734%2C49.419%2C8.709%2C49.410%2C8.704%2C49.4079%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "density",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "bpolys",
+              "value": "lV%3A8.704561%2C49.403252%2C8.734%2C49.419%2C8.709%2C49.410%2C8.704%2C49.4079%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jefzd80d4m7a_areaDensityGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/density/groupBy/boundary?filter=oneway%21%3D*+or+geometry%3Aline+or+not+length%3A%28+..+100%29&bboxes=w%3A8.689%2C49.4283%2C8.7405%2C49.39066%7CHXfjv%3A8.668369%2C49.426952%2C8.7475%2C49.397%7Cho%3A8.675607%2C49.407%2C8.754%2C49.3991%7CQyi%3A8.672%2C49.417%2C8.741%2C49.38959&format=json&showMetadata=no&time=2009-09-30&timeout=83",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "density",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "oneway%21%3D*+or+geometry%3Aline+or+not+length%3A%28+..+100%29"
+            },
+            {
+              "key": "bboxes",
+              "value": "w%3A8.689%2C49.4283%2C8.7405%2C49.39066%7CHXfjv%3A8.668369%2C49.426952%2C8.7475%2C49.397%7Cho%3A8.675607%2C49.407%2C8.754%2C49.3991%7CQyi%3A8.672%2C49.417%2C8.741%2C49.38959"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2009-09-30"
+            },
+            {
+              "key": "timeout",
+              "value": "83"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_qe133jxlxuep_areaDensityGroupByBoundaryGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/density/groupBy/boundary/groupBy/tag?groupByValues=primary_link%2Cfootway%2Ccommercial&bboxes=8.6842%2C49.421%2C8.7131%2C49.382&groupByKey=highway&format=csv&time=2008-01-27",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "density",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "primary_link%2Cfootway%2Ccommercial"
+            },
+            {
+              "key": "bboxes",
+              "value": "8.6842%2C49.421%2C8.7131%2C49.382"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "time",
+              "value": "2008-01-27"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jenq3zchmaua_areaDensityGroupByBoundaryGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/density/groupBy/boundary/groupBy/tag?groupByKey=building&keys=highway&values=footway&time=2015-01-05&timeout=78&bcircles=Av%3A8.724%2C49.4257%2C8",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "density",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "footway"
+            },
+            {
+              "key": "time",
+              "value": "2015-01-05"
+            },
+            {
+              "key": "timeout",
+              "value": "78"
+            },
+            {
+              "key": "bcircles",
+              "value": "Av%3A8.724%2C49.4257%2C8"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t842zgv35gs8_areaDensityGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/density/groupBy/tag?bboxes=8.672563%2C49.414%2C8.710509%2C49.3954%7C8.6877%2C49.400%2C8.724%2C49.397&groupByKey=building&keys=highway",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "density",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "8.672563%2C49.414%2C8.710509%2C49.3954%7C8.6877%2C49.400%2C8.724%2C49.397"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hrmjowpr5vzr_areaDensityGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/density/groupBy/tag?groupByKey=highway&format=csv&showMetadata=no&time=2009-02-23&bpolys=QJ%3A8.704561%2C49.403252%2C8.7096%2C49.404%2C8.733%2C49.415%2C8.73844%2C49.4320%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "density",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2009-02-23"
+            },
+            {
+              "key": "bpolys",
+              "value": "QJ%3A8.704561%2C49.403252%2C8.7096%2C49.404%2C8.733%2C49.415%2C8.73844%2C49.4320%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_vf45lnytdctz_areaDensityGroupByType",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/density/groupBy/type?showMetadata=no&time=2010-08-14&bcircles=Xlhcq%3A8.72804%2C49.419289%2C2%7CYg%3A8.748%2C49.407%2C19%7CQ%3A8.741%2C49.430%2C5",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "density",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2010-08-14"
+            },
+            {
+              "key": "bcircles",
+              "value": "Xlhcq%3A8.72804%2C49.419289%2C2%7CYg%3A8.748%2C49.407%2C19%7CQ%3A8.741%2C49.430%2C5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_vf6zbpbtdqnt_areaDensityGroupByType1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/density/groupBy/type?bboxes=8.6669%2C49.40337%2C8.72412%2C49.389%7C8.670%2C49.41950%2C8.7234%2C49.392&format=csv",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "density",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "8.6669%2C49.40337%2C8.72412%2C49.389%7C8.670%2C49.41950%2C8.7234%2C49.392"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_vb6agp4e0eup_areaGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/groupBy/boundary?keys=highway&values=residential&time=2017-04-12&timeout=89&bcircles=MU%3A8.715134%2C49.402%2C2",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "residential"
+            },
+            {
+              "key": "time",
+              "value": "2017-04-12"
+            },
+            {
+              "key": "timeout",
+              "value": "89"
+            },
+            {
+              "key": "bcircles",
+              "value": "MU%3A8.715134%2C49.402%2C2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jefzdlv92ywh_areaGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/groupBy/boundary?time=2016-06-27&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22iX%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.728%2C49.413%5D%2C%5B8.720%2C49.435%5D%2C%5B8.7397%2C49.407%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D&timeout=63",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "time",
+              "value": "2016-06-27"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22iX%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.728%2C49.413%5D%2C%5B8.720%2C49.435%5D%2C%5B8.7397%2C49.407%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            },
+            {
+              "key": "timeout",
+              "value": "63"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_vbshqzzihxrm_areaGroupByBoundaryGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/groupBy/boundary/groupBy/tag?groupByValues=construction%2Cemergency_access_point%2Cstreet_lamp&groupByKey=building&keys=highway&time=2016-05-23&bpolys=8.704561%2C49.403252%2C8.719%2C49.425%2C8.747%2C49.436%2C8.704868%2C49.4199%2C8.704561%2C49.403252&timeout=37",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "construction%2Cemergency_access_point%2Cstreet_lamp"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "time",
+              "value": "2016-05-23"
+            },
+            {
+              "key": "bpolys",
+              "value": "8.704561%2C49.403252%2C8.719%2C49.425%2C8.747%2C49.436%2C8.704868%2C49.4199%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "37"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_skvm8m4y6vl1_areaGroupByBoundaryGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/groupBy/boundary/groupBy/tag?groupByKey=building&keys=highway&values=primary&showMetadata=yes&time=2010-03-04&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22J%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.724%2C49.412297%5D%2C%5B8.707%2C49.420%5D%2C%5B8.718%2C49.413%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22yj%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.714%2C49.407%5D%2C%5B8.704023%2C49.4247%5D%2C%5B8.72944%2C49.430%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22n%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.74334%2C49.423%5D%2C%5B8.701%2C49.41019%5D%2C%5B8.7045%2C49.4084%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D&timeout=93",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "primary"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "time",
+              "value": "2010-03-04"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22J%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.724%2C49.412297%5D%2C%5B8.707%2C49.420%5D%2C%5B8.718%2C49.413%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22yj%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.714%2C49.407%5D%2C%5B8.704023%2C49.4247%5D%2C%5B8.72944%2C49.430%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22n%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.74334%2C49.423%5D%2C%5B8.701%2C49.41019%5D%2C%5B8.7045%2C49.4084%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            },
+            {
+              "key": "timeout",
+              "value": "93"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_r1if3x4xzh46_areaGroupByKey",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/groupBy/key?filter=smoothness%3D*+or+type%3Arelation+or+not+area%3A%281.0+..+1E6%29&bboxes=lWKr%3A8.672%2C49.407%2C8.717%2C49.3897&showMetadata=true&time=2008-02-26&groupByKeys=oneway%2Ctracktype",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "groupBy",
+            "key"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "smoothness%3D*+or+type%3Arelation+or+not+area%3A%281.0+..+1E6%29"
+            },
+            {
+              "key": "bboxes",
+              "value": "lWKr%3A8.672%2C49.407%2C8.717%2C49.3897"
+            },
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "time",
+              "value": "2008-02-26"
+            },
+            {
+              "key": "groupByKeys",
+              "value": "oneway%2Ctracktype"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t8cwazrpaipj_areaGroupByKey1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/groupBy/key?filter=surface%3D*&format=geojson&time=2017-04-17&timeout=71&groupByKeys=highway%2Cref%2Clanes%3Aforward&bcircles=8.70153%2C49.405%2C99",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "groupBy",
+            "key"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "surface%3D*"
+            },
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "time",
+              "value": "2017-04-17"
+            },
+            {
+              "key": "timeout",
+              "value": "71"
+            },
+            {
+              "key": "groupByKeys",
+              "value": "highway%2Cref%2Clanes%3Aforward"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.70153%2C49.405%2C99"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_s1h6738clvsp_areaGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/groupBy/tag?groupByKey=building&format=json&time=2008-01-26&bpolys=8.704561%2C49.403252%2C8.722%2C49.423%2C8.702119%2C49.424944%2C8.7110%2C49.416%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "time",
+              "value": "2008-01-26"
+            },
+            {
+              "key": "bpolys",
+              "value": "8.704561%2C49.403252%2C8.722%2C49.423%2C8.702119%2C49.424944%2C8.7110%2C49.416%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_s1gonuuyz2ut_areaGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/groupBy/tag?groupByKey=building&keys=highway&format=geojson&showMetadata=no&time=2010-09-18&bcircles=Njg%3A8.742983%2C49.427%2C45",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2010-09-18"
+            },
+            {
+              "key": "bcircles",
+              "value": "Njg%3A8.742983%2C49.427%2C45"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_urun1u56wpio_areaGroupByType",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/groupBy/type?keys=highway&format=json&bcircles=uG%3A8.749%2C49.4061%2C8",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "bcircles",
+              "value": "uG%3A8.749%2C49.4061%2C8"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1h84roh1kus6s_areaGroupByType1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/groupBy/type?keys=highway&values=track&showMetadata=true&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22UjM%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.73346%2C49.421%5D%2C%5B8.7027%2C49.424%5D%2C%5B8.705268%2C49.41186%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22q%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7037%2C49.4154%5D%2C%5B8.726%2C49.415%5D%2C%5B8.727%2C49.418679%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D&timeout=62",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "track"
+            },
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22UjM%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.73346%2C49.421%5D%2C%5B8.7027%2C49.424%5D%2C%5B8.705268%2C49.41186%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22q%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7037%2C49.4154%5D%2C%5B8.726%2C49.415%5D%2C%5B8.727%2C49.418679%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            },
+            {
+              "key": "timeout",
+              "value": "62"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t4q6gqul08de_areaRatio",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/ratio?filter=tracktype%3D*&types2=line%2C&format=csv&filter2=addr%3Acity%21%3D*+and+not+length%3A%28+..+100%29&time=2014-01-03&bpolys=JWbtF%3A8.704561%2C49.403252%2C8.723%2C49.425%2C8.704567%2C49.4158%2C8.7238%2C49.407%2C8.704561%2C49.403252&keys2=highway&values2=elevator",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "ratio"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "tracktype%3D*"
+            },
+            {
+              "key": "types2",
+              "value": "line%2C"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "filter2",
+              "value": "addr%3Acity%21%3D*+and+not+length%3A%28+..+100%29"
+            },
+            {
+              "key": "time",
+              "value": "2014-01-03"
+            },
+            {
+              "key": "bpolys",
+              "value": "JWbtF%3A8.704561%2C49.403252%2C8.723%2C49.425%2C8.704567%2C49.4158%2C8.7238%2C49.407%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "keys2",
+              "value": "highway"
+            },
+            {
+              "key": "values2",
+              "value": "elevator"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1iyhs6syy9kc5_areaRatio1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/ratio?filter=name%3D*+and+not+area%3A%281.0+..+1E6%29&bpolys=jSG%3A8.704561%2C49.403252%2C8.714%2C49.417%2C8.713%2C49.409471%2C8.70748%2C49.4377%2C8.704561%2C49.403252%7Cd%3A8.704561%2C49.403252%2C8.7334%2C49.433%2C8.70008%2C49.409%2C8.749307%2C49.4106%2C8.704561%2C49.403252%7CD%3A8.704561%2C49.403252%2C8.7410%2C49.438426%2C8.7427%2C49.415%2C8.7060%2C49.404%2C8.704561%2C49.403252&keys2=highway&values2=traffic_signals",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "ratio"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "name%3D*+and+not+area%3A%281.0+..+1E6%29"
+            },
+            {
+              "key": "bpolys",
+              "value": "jSG%3A8.704561%2C49.403252%2C8.714%2C49.417%2C8.713%2C49.409471%2C8.70748%2C49.4377%2C8.704561%2C49.403252%7Cd%3A8.704561%2C49.403252%2C8.7334%2C49.433%2C8.70008%2C49.409%2C8.749307%2C49.4106%2C8.704561%2C49.403252%7CD%3A8.704561%2C49.403252%2C8.7410%2C49.438426%2C8.7427%2C49.415%2C8.7060%2C49.404%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "keys2",
+              "value": "highway"
+            },
+            {
+              "key": "values2",
+              "value": "traffic_signals"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1ib5ygxpccawn_areaRatioGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/ratio/groupBy/boundary?types2=point%2Cpolygon%2C&time=2016-07-16&keys2=highway&timeout=91&values2=bus_stop&bcircles=HYtIG%3A8.70975%2C49.4216%2C2%7CK%3A8.729%2C49.421%2C93%7Ch%3A8.732%2C49.422%2C4%7Ca%3A8.712774%2C49.421%2C732410139182",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "ratio",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "types2",
+              "value": "point%2Cpolygon%2C"
+            },
+            {
+              "key": "time",
+              "value": "2016-07-16"
+            },
+            {
+              "key": "keys2",
+              "value": "highway"
+            },
+            {
+              "key": "timeout",
+              "value": "91"
+            },
+            {
+              "key": "values2",
+              "value": "bus_stop"
+            },
+            {
+              "key": "bcircles",
+              "value": "HYtIG%3A8.70975%2C49.4216%2C2%7CK%3A8.729%2C49.421%2C93%7Ch%3A8.732%2C49.422%2C4%7Ca%3A8.712774%2C49.421%2C732410139182"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_ts4qdzs767vo_areaRatioGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/area/ratio/groupBy/boundary?filter=destination%3D*+or+not+type%3Away+and+length%3A%28+..+100%29&format=csv&showMetadata=yes&keys2=highway&timeout=58&values2=emergency_access_point&bcircles=s%3A8.7136%2C49.423%2C1",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "area",
+            "ratio",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "destination%3D*+or+not+type%3Away+and+length%3A%28+..+100%29"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "keys2",
+              "value": "highway"
+            },
+            {
+              "key": "timeout",
+              "value": "58"
+            },
+            {
+              "key": "values2",
+              "value": "emergency_access_point"
+            },
+            {
+              "key": "bcircles",
+              "value": "s%3A8.7136%2C49.423%2C1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_skxx69puviht_count",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count?filter=oneway%3D*+or+geometry%3Aline&format=csv&bpolys=vq%3A8.704561%2C49.403252%2C8.745%2C49.428%2C8.702%2C49.427%2C8.73360%2C49.433%2C8.704561%2C49.403252%7Cc%3A8.704561%2C49.403252%2C8.7367%2C49.401%2C8.729%2C49.408077%2C8.743%2C49.417%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "oneway%3D*+or+geometry%3Aline"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "bpolys",
+              "value": "vq%3A8.704561%2C49.403252%2C8.745%2C49.428%2C8.702%2C49.427%2C8.73360%2C49.433%2C8.704561%2C49.403252%7Cc%3A8.704561%2C49.403252%2C8.7367%2C49.401%2C8.729%2C49.408077%2C8.743%2C49.417%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_tnzjn5hjtwz8_count1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count?bboxes=id%3A8.69508%2C49.402%2C8.7524%2C49.381&showMetadata=yes&time=2015-09-01&timeout=59",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "id%3A8.69508%2C49.402%2C8.7524%2C49.381"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "time",
+              "value": "2015-09-01"
+            },
+            {
+              "key": "timeout",
+              "value": "59"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hbissuxjwwv7_countDensity",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/density?bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22VM%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7486%2C49.42087%5D%2C%5B8.725%2C49.437%5D%2C%5B8.729%2C49.4082%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22bZk%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.71279%2C49.404%5D%2C%5B8.722%2C49.4155%5D%2C%5B8.71949%2C49.4165%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22SlY%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.745%2C49.4338%5D%2C%5B8.700%2C49.4217%5D%2C%5B8.7324%2C49.413751%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D&timeout=93",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "density"
+          ],
+          "query": [
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22VM%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7486%2C49.42087%5D%2C%5B8.725%2C49.437%5D%2C%5B8.729%2C49.4082%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22bZk%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.71279%2C49.404%5D%2C%5B8.722%2C49.4155%5D%2C%5B8.71949%2C49.4165%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22SlY%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.745%2C49.4338%5D%2C%5B8.700%2C49.4217%5D%2C%5B8.7324%2C49.413751%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            },
+            {
+              "key": "timeout",
+              "value": "93"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1ib5y38r7zgvq_countDensity1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/density?bboxes=8.6846%2C49.421%2C8.741615%2C49.3964&showMetadata=no&timeout=26",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "density"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "8.6846%2C49.421%2C8.741615%2C49.3964"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "timeout",
+              "value": "26"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hrh04x6xestf_countDensityGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/density/groupBy/boundary?keys=highway&values=track&format=geojson&time=2011-12-03&timeout=68&bcircles=s%3A8.7376%2C49.4269%2C4",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "density",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "track"
+            },
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "time",
+              "value": "2011-12-03"
+            },
+            {
+              "key": "timeout",
+              "value": "68"
+            },
+            {
+              "key": "bcircles",
+              "value": "s%3A8.7376%2C49.4269%2C4"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t4nvu7u25bg2_countDensityGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/density/groupBy/boundary?format=csv&showMetadata=true&timeout=62&bcircles=8.711%2C49.438%2C7",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "density",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "timeout",
+              "value": "62"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.711%2C49.438%2C7"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_skstapcalagm_countDensityGroupByBoundaryGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/density/groupBy/boundary/groupBy/tag?bboxes=vSi%3A8.660%2C49.409%2C8.752%2C49.3813%7CF%3A8.66819%2C49.407184%2C8.752%2C49.392%7CADF%3A8.6862%2C49.422%2C8.75483%2C49.39437&groupByKey=highway&format=csv&time=2016-04-21&timeout=75",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "density",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "vSi%3A8.660%2C49.409%2C8.752%2C49.3813%7CF%3A8.66819%2C49.407184%2C8.752%2C49.392%7CADF%3A8.6862%2C49.422%2C8.75483%2C49.39437"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "time",
+              "value": "2016-04-21"
+            },
+            {
+              "key": "timeout",
+              "value": "75"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1h7trpakdejw8_countDensityGroupByBoundaryGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/density/groupBy/boundary/groupBy/tag?bboxes=8.680%2C49.410%2C8.736%2C49.397&groupByKey=highway&keys=highway&values=turning_circle&format=json&time=2016-08-30&timeout=64",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "density",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "8.680%2C49.410%2C8.736%2C49.397"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "turning_circle"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "time",
+              "value": "2016-08-30"
+            },
+            {
+              "key": "timeout",
+              "value": "64"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jyis9f4cl6pi_countDensityGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/density/groupBy/tag?groupByKey=building&keys=highway&values=street_lamp&format=json&showMetadata=yes&time=2010-10-16&bcircles=jzo%3A8.735278%2C49.425805%2C6",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "density",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "street_lamp"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "time",
+              "value": "2010-10-16"
+            },
+            {
+              "key": "bcircles",
+              "value": "jzo%3A8.735278%2C49.425805%2C6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_to7d3r5o0n5c_countDensityGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/density/groupBy/tag?groupByValues=service%2Coffice%2Cpublic&bboxes=NOTXH%3A8.686%2C49.4298%2C8.7211%2C49.388&groupByKey=building&keys=highway&format=csv",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "density",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "service%2Coffice%2Cpublic"
+            },
+            {
+              "key": "bboxes",
+              "value": "NOTXH%3A8.686%2C49.4298%2C8.7211%2C49.388"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jyg1nwvecm03_countDensityGroupByType",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/density/groupBy/type?format=json&showMetadata=no&time=2015-07-26&bpolys=qxHTl%3A8.704561%2C49.403252%2C8.7472%2C49.406%2C8.70788%2C49.420%2C8.70168%2C49.424%2C8.704561%2C49.403252%7CN%3A8.704561%2C49.403252%2C8.7112%2C49.417670%2C8.70491%2C49.41857%2C8.708%2C49.4120%2C8.704561%2C49.403252%7CnPp%3A8.704561%2C49.403252%2C8.7303%2C49.406%2C8.719%2C49.4340%2C8.74269%2C49.408%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "density",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2015-07-26"
+            },
+            {
+              "key": "bpolys",
+              "value": "qxHTl%3A8.704561%2C49.403252%2C8.7472%2C49.406%2C8.70788%2C49.420%2C8.70168%2C49.424%2C8.704561%2C49.403252%7CN%3A8.704561%2C49.403252%2C8.7112%2C49.417670%2C8.70491%2C49.41857%2C8.708%2C49.4120%2C8.704561%2C49.403252%7CnPp%3A8.704561%2C49.403252%2C8.7303%2C49.406%2C8.719%2C49.4340%2C8.74269%2C49.408%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_s504q69pm9m9_countDensityGroupByType1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/density/groupBy/type?keys=highway&values=tertiary&format=json&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22M%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.72322%2C49.426%5D%2C%5B8.708%2C49.439%5D%2C%5B8.716%2C49.437%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D&timeout=22",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "density",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "tertiary"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22M%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.72322%2C49.426%5D%2C%5B8.708%2C49.439%5D%2C%5B8.716%2C49.437%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            },
+            {
+              "key": "timeout",
+              "value": "22"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_rkzk4rnqsy8x_countGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/groupBy/boundary?bboxes=O%3A8.690%2C49.4238%2C8.71790%2C49.3903&keys=highway&values=speed_camera&showMetadata=yes&timeout=95",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "O%3A8.690%2C49.4238%2C8.71790%2C49.3903"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "speed_camera"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "timeout",
+              "value": "95"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jefyo2f4mesh_countGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/groupBy/boundary?filter=oneway%21%3D*+and+geometry%3Aline+and+length%3A%28+..+100%29&time=2011-03-03&bpolys=iC%3A8.704561%2C49.403252%2C8.7297%2C49.4019%2C8.7495%2C49.427%2C8.722%2C49.435%2C8.704561%2C49.403252%7Cu%3A8.704561%2C49.403252%2C8.725%2C49.405%2C8.7350%2C49.424%2C8.701492%2C49.401192%2C8.704561%2C49.403252%7Cs%3A8.704561%2C49.403252%2C8.7365%2C49.4331%2C8.726%2C49.41956%2C8.720%2C49.425%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "oneway%21%3D*+and+geometry%3Aline+and+length%3A%28+..+100%29"
+            },
+            {
+              "key": "time",
+              "value": "2011-03-03"
+            },
+            {
+              "key": "bpolys",
+              "value": "iC%3A8.704561%2C49.403252%2C8.7297%2C49.4019%2C8.7495%2C49.427%2C8.722%2C49.435%2C8.704561%2C49.403252%7Cu%3A8.704561%2C49.403252%2C8.725%2C49.405%2C8.7350%2C49.424%2C8.701492%2C49.401192%2C8.704561%2C49.403252%7Cs%3A8.704561%2C49.403252%2C8.7365%2C49.4331%2C8.726%2C49.41956%2C8.720%2C49.425%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t842zajufejp_countGroupByBoundaryGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/groupBy/boundary/groupBy/tag?groupByValues=secondary_link&groupByKey=highway&keys=highway&values=primary_link&bcircles=bND%3A8.715%2C49.413%2C6",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "secondary_link"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "primary_link"
+            },
+            {
+              "key": "bcircles",
+              "value": "bND%3A8.715%2C49.413%2C6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_rl2vukvmyrfm_countGroupByBoundaryGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/groupBy/boundary/groupBy/tag?filter=highway%21%3D*+and+geometry%3Apolygon&bboxes=hJS%3A8.689%2C49.4238%2C8.7513%2C49.397&groupByKey=highway&showMetadata=false",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "highway%21%3D*+and+geometry%3Apolygon"
+            },
+            {
+              "key": "bboxes",
+              "value": "hJS%3A8.689%2C49.4238%2C8.7513%2C49.397"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jel0ljl5cv37_countGroupByKey",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/groupBy/key?keys=highway&values=unclassified&showMetadata=true&time=2016-03-30&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22Ly%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.735831%2C49.421%5D%2C%5B8.703%2C49.419%5D%2C%5B8.7277%2C49.4012%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22IlA%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.744%2C49.405132%5D%2C%5B8.704926%2C49.413%5D%2C%5B8.72729%2C49.414%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22I%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7369%2C49.4085%5D%2C%5B8.702%2C49.4009%5D%2C%5B8.700%2C49.4192%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D&groupByKeys=lanes%3Abackward%2Csidewalk%2Cturn",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "groupBy",
+            "key"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "unclassified"
+            },
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "time",
+              "value": "2016-03-30"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22Ly%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.735831%2C49.421%5D%2C%5B8.703%2C49.419%5D%2C%5B8.7277%2C49.4012%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22IlA%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.744%2C49.405132%5D%2C%5B8.704926%2C49.413%5D%2C%5B8.72729%2C49.414%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22I%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7369%2C49.4085%5D%2C%5B8.702%2C49.4009%5D%2C%5B8.700%2C49.4192%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            },
+            {
+              "key": "groupByKeys",
+              "value": "lanes%3Abackward%2Csidewalk%2Cturn"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jy2opoieh0dw_countGroupByKey1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/groupBy/key?bboxes=GgtQ%3A8.6791%2C49.4294%2C8.745%2C49.3837%7CL%3A8.65875%2C49.420%2C8.722%2C49.398%7CPJoiQ%3A8.6955%2C49.42856%2C8.71371%2C49.380&keys=highway&values=street_lamp&format=json&groupByKeys=surface%2Clanes%3Aforward%2Cbicycle",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "groupBy",
+            "key"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "GgtQ%3A8.6791%2C49.4294%2C8.745%2C49.3837%7CL%3A8.65875%2C49.420%2C8.722%2C49.398%7CPJoiQ%3A8.6955%2C49.42856%2C8.71371%2C49.380"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "street_lamp"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "groupByKeys",
+              "value": "surface%2Clanes%3Aforward%2Cbicycle"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_soneq9twycdw_countGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/groupBy/tag?groupByValues=living_street%2Cresidential%2Cuniversity&filter=foot%3D*+or+not+area%3A%281.0+..+1E6%29&bboxes=WM%3A8.688%2C49.4204%2C8.7557%2C49.387%7CXaMCX%3A8.6613%2C49.40937%2C8.7229%2C49.38669&groupByKey=building&time=2017-11-30&timeout=32",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "living_street%2Cresidential%2Cuniversity"
+            },
+            {
+              "key": "filter",
+              "value": "foot%3D*+or+not+area%3A%281.0+..+1E6%29"
+            },
+            {
+              "key": "bboxes",
+              "value": "WM%3A8.688%2C49.4204%2C8.7557%2C49.387%7CXaMCX%3A8.6613%2C49.40937%2C8.7229%2C49.38669"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "time",
+              "value": "2017-11-30"
+            },
+            {
+              "key": "timeout",
+              "value": "32"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_rhlmw6elhrhd_countGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/groupBy/tag?groupByValues=garage%2Cgive_way&bboxes=O%3A8.679%2C49.406%2C8.728%2C49.397%7CyVbXd%3A8.664107%2C49.400%2C8.704%2C49.386&groupByKey=highway&keys=highway&values=emergency_access_point&format=csv&showMetadata=no&timeout=45",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "garage%2Cgive_way"
+            },
+            {
+              "key": "bboxes",
+              "value": "O%3A8.679%2C49.406%2C8.728%2C49.397%7CyVbXd%3A8.664107%2C49.400%2C8.704%2C49.386"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "emergency_access_point"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "timeout",
+              "value": "45"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t49jhzj2ejq9_countGroupByType",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/groupBy/type?showMetadata=true&time=2017-09-14&bpolys=Q%3A8.704561%2C49.403252%2C8.735048%2C49.422%2C8.704%2C49.4136%2C8.708%2C49.4065%2C8.704561%2C49.403252%7Cbe%3A8.704561%2C49.403252%2C8.711%2C49.439%2C8.732%2C49.414206%2C8.702%2C49.414%2C8.704561%2C49.403252%7Cl%3A8.704561%2C49.403252%2C8.725%2C49.407%2C8.7003%2C49.412%2C8.7493%2C49.42869%2C8.704561%2C49.403252&timeout=21",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "time",
+              "value": "2017-09-14"
+            },
+            {
+              "key": "bpolys",
+              "value": "Q%3A8.704561%2C49.403252%2C8.735048%2C49.422%2C8.704%2C49.4136%2C8.708%2C49.4065%2C8.704561%2C49.403252%7Cbe%3A8.704561%2C49.403252%2C8.711%2C49.439%2C8.732%2C49.414206%2C8.702%2C49.414%2C8.704561%2C49.403252%7Cl%3A8.704561%2C49.403252%2C8.725%2C49.407%2C8.7003%2C49.412%2C8.7493%2C49.42869%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "21"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_qhnu19flhwz4_countGroupByType1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/groupBy/type?filter=barrier%21%3D*+or+geometry%3Aline+or+not+id%3A%281+..+9999%29&format=geojson&bcircles=8.7047%2C49.435%2C8%7C8.736%2C49.433%2C9%7C8.70991%2C49.41940%2C4",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "barrier%21%3D*+or+geometry%3Aline+or+not+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.7047%2C49.435%2C8%7C8.736%2C49.433%2C9%7C8.70991%2C49.41940%2C4"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t81tx1vk2am0_countRatio",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/ratio?keys=highway&types2=point%2C&format=json&showMetadata=true&bcircles=8.7360%2C49.422%2C1%7C8.71804%2C49.404%2C2",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "ratio"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "types2",
+              "value": "point%2C"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.7360%2C49.422%2C1%7C8.71804%2C49.404%2C2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hbahvcjntm5f_countRatio1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/ratio?bboxes=C%3A8.6910%2C49.4247%2C8.743%2C49.398&keys=highway&format=csv&showMetadata=true&filter2=maxspeed%3D*+and+geometry%3Apoint+and+id%3A%281+..+9999%29&timeout=78",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "ratio"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "C%3A8.6910%2C49.4247%2C8.743%2C49.398"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "filter2",
+              "value": "maxspeed%3D*+and+geometry%3Apoint+and+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "timeout",
+              "value": "78"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_uvk8vyj1knqo_countRatioGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/ratio/groupBy/boundary?filter=oneway%3D*+or+geometry%3Aline&bboxes=8.65557%2C49.423%2C8.748%2C49.391%7C8.661%2C49.410341%2C8.73633%2C49.3907%7C8.675%2C49.4072%2C8.733%2C49.3807&format=json&showMetadata=yes",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "ratio",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "oneway%3D*+or+geometry%3Aline"
+            },
+            {
+              "key": "bboxes",
+              "value": "8.65557%2C49.423%2C8.748%2C49.391%7C8.661%2C49.410341%2C8.73633%2C49.3907%7C8.675%2C49.4072%2C8.733%2C49.3807"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jelhtl22mlvc_countRatioGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/count/ratio/groupBy/boundary?keys=highway&types2=point%2Cline%2Cpolygon%2C&values=cycleway&showMetadata=false&bpolys=8.704561%2C49.403252%2C8.714%2C49.4222%2C8.705%2C49.422926%2C8.732%2C49.424%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.7313%2C49.434%2C8.715%2C49.400%2C8.7008%2C49.4376%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.740%2C49.428722%2C8.74359%2C49.4204%2C8.705507%2C49.4309%2C8.704561%2C49.403252&timeout=35",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "count",
+            "ratio",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "types2",
+              "value": "point%2Cline%2Cpolygon%2C"
+            },
+            {
+              "key": "values",
+              "value": "cycleway"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "bpolys",
+              "value": "8.704561%2C49.403252%2C8.714%2C49.4222%2C8.705%2C49.422926%2C8.732%2C49.424%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.7313%2C49.434%2C8.715%2C49.400%2C8.7008%2C49.4376%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.740%2C49.428722%2C8.74359%2C49.4204%2C8.705507%2C49.4309%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "35"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hv2ot5lmakvl_length",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length?bboxes=o%3A8.658%2C49.423393%2C8.7383%2C49.380&format=csv&timeout=96",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "o%3A8.658%2C49.423393%2C8.7383%2C49.380"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "timeout",
+              "value": "96"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t4a0kpma1sfs_length1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length?keys=highway&format=json&showMetadata=true&time=2013-09-21&bcircles=8.746%2C49.42615%2C140",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "time",
+              "value": "2013-09-21"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.746%2C49.42615%2C140"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_vbmy9z02zuqp_lengthDensity",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/density?filter=landuse%21%3D*+or+length%3A%28+..+100%29&time=2012-06-17&bpolys=F%3A8.704561%2C49.403252%2C8.745%2C49.430%2C8.7050%2C49.42913%2C8.741%2C49.415%2C8.704561%2C49.403252&timeout=47",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "density"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "landuse%21%3D*+or+length%3A%28+..+100%29"
+            },
+            {
+              "key": "time",
+              "value": "2012-06-17"
+            },
+            {
+              "key": "bpolys",
+              "value": "F%3A8.704561%2C49.403252%2C8.745%2C49.430%2C8.7050%2C49.42913%2C8.741%2C49.415%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "47"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1if0ljl48hmwo_lengthDensity1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/density?keys=highway&values=speed_camera&bcircles=PZ%3A8.731029%2C49.4126%2C26%7CHzFQU%3A8.721%2C49.410%2C6",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "density"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "speed_camera"
+            },
+            {
+              "key": "bcircles",
+              "value": "PZ%3A8.731029%2C49.4126%2C26%7CHzFQU%3A8.721%2C49.410%2C6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_urv6uxunbfj9_lengthDensityGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/density/groupBy/boundary?bboxes=Pct%3A8.6893%2C49.410683%2C8.749%2C49.3840&showMetadata=false&timeout=79",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "density",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "Pct%3A8.6893%2C49.410683%2C8.749%2C49.3840"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "timeout",
+              "value": "79"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_rhdulspsyjow_lengthDensityGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/density/groupBy/boundary?filter=maxspeed%3D*+and+not+geometry%3Aline&bboxes=xG%3A8.696%2C49.4072%2C8.70783%2C49.394&format=geojson&showMetadata=false&time=2008-07-03&timeout=22",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "density",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "maxspeed%3D*+and+not+geometry%3Aline"
+            },
+            {
+              "key": "bboxes",
+              "value": "xG%3A8.696%2C49.4072%2C8.70783%2C49.394"
+            },
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "time",
+              "value": "2008-07-03"
+            },
+            {
+              "key": "timeout",
+              "value": "22"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_skq30d7zw6k0_lengthDensityGroupByBoundaryGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/density/groupBy/boundary/groupBy/tag?groupByValues=station%2Croof%2Cspeed_camera&groupByKey=highway&keys=highway&showMetadata=no&time=2008-12-31&bpolys=8.704561%2C49.403252%2C8.701%2C49.401187%2C8.726%2C49.408%2C8.7048%2C49.424%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.702%2C49.41388%2C8.709%2C49.4342%2C8.7436%2C49.400811%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.73963%2C49.410%2C8.7049%2C49.41469%2C8.73838%2C49.421%2C8.704561%2C49.403252&timeout=33",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "density",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "station%2Croof%2Cspeed_camera"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2008-12-31"
+            },
+            {
+              "key": "bpolys",
+              "value": "8.704561%2C49.403252%2C8.701%2C49.401187%2C8.726%2C49.408%2C8.7048%2C49.424%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.702%2C49.41388%2C8.709%2C49.4342%2C8.7436%2C49.400811%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.73963%2C49.410%2C8.7049%2C49.41469%2C8.73838%2C49.421%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "33"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1je9wsqp5n229_lengthDensityGroupByBoundaryGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/density/groupBy/boundary/groupBy/tag?groupByKey=highway&keys=highway&values=pedestrian&bpolys=KqHvN%3A8.704561%2C49.403252%2C8.728%2C49.428%2C8.73892%2C49.413%2C8.727%2C49.406%2C8.704561%2C49.403252&timeout=45",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "density",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "pedestrian"
+            },
+            {
+              "key": "bpolys",
+              "value": "KqHvN%3A8.704561%2C49.403252%2C8.728%2C49.428%2C8.73892%2C49.413%2C8.727%2C49.406%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "45"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_vbq92uema4he_lengthDensityGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/density/groupBy/tag?groupByKey=building&keys=highway&showMetadata=yes&bpolys=F%3A8.704561%2C49.403252%2C8.743%2C49.4105%2C8.70417%2C49.428417%2C8.7043%2C49.438870%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "density",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "bpolys",
+              "value": "F%3A8.704561%2C49.403252%2C8.743%2C49.4105%2C8.70417%2C49.428417%2C8.7043%2C49.438870%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_rl54wv68r969_lengthDensityGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/density/groupBy/tag?groupByValues=traffic_mirror%2Cstreet_lamp&filter=foot%21%3D*+and+length%3A%28+..+100%29&groupByKey=building&format=csv&time=2012-09-14&bcircles=S%3A8.719%2C49.40253%2C7%7CzD%3A8.718%2C49.4352%2C9",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "density",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "traffic_mirror%2Cstreet_lamp"
+            },
+            {
+              "key": "filter",
+              "value": "foot%21%3D*+and+length%3A%28+..+100%29"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "time",
+              "value": "2012-09-14"
+            },
+            {
+              "key": "bcircles",
+              "value": "S%3A8.719%2C49.40253%2C7%7CzD%3A8.718%2C49.4352%2C9"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_rh7schvypeev_lengthDensityGroupByType",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/density/groupBy/type?format=csv&showMetadata=no&time=2012-02-13&bpolys=8.704561%2C49.403252%2C8.705%2C49.417%2C8.711%2C49.407%2C8.72649%2C49.405909%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "density",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2012-02-13"
+            },
+            {
+              "key": "bpolys",
+              "value": "8.704561%2C49.403252%2C8.705%2C49.417%2C8.711%2C49.407%2C8.72649%2C49.405909%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1h7zrjk5mv42q_lengthDensityGroupByType1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/density/groupBy/type?bboxes=8.674%2C49.41240%2C8.709%2C49.381&time=2010-10-12",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "density",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "8.674%2C49.41240%2C8.709%2C49.381"
+            },
+            {
+              "key": "time",
+              "value": "2010-10-12"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1iey9tbngosvr_lengthGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/groupBy/boundary?format=json&showMetadata=no&time=2018-04-30&bcircles=tUZyk%3A8.736%2C49.436271%2C92",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2018-04-30"
+            },
+            {
+              "key": "bcircles",
+              "value": "tUZyk%3A8.736%2C49.436271%2C92"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_rh4yaw7fw0gz_lengthGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/groupBy/boundary?filter=landuse%3D*+and+geometry%3Apoint&bboxes=ZTV%3A8.6958%2C49.400985%2C8.700%2C49.393%7Cou%3A8.6729%2C49.4075%2C8.7037%2C49.382%7Cp%3A8.679749%2C49.416%2C8.740%2C49.389%7CBESY%3A8.67660%2C49.428%2C8.705%2C49.390764&format=csv&time=2011-06-02",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "landuse%3D*+and+geometry%3Apoint"
+            },
+            {
+              "key": "bboxes",
+              "value": "ZTV%3A8.6958%2C49.400985%2C8.700%2C49.393%7Cou%3A8.6729%2C49.4075%2C8.7037%2C49.382%7Cp%3A8.679749%2C49.416%2C8.740%2C49.389%7CBESY%3A8.67660%2C49.428%2C8.705%2C49.390764"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "time",
+              "value": "2011-06-02"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jig1p5et6hk1_lengthGroupByBoundaryGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/groupBy/boundary/groupBy/tag?groupByValues=office&filter=addr%3Ahousenumber%3D*+and+geometry%3Apoint+or+area%3A%281.0+..+1E6%29&groupByKey=building&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22kxT%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.710333%2C49.408%5D%2C%5B8.73070%2C49.410%5D%2C%5B8.741%2C49.438%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22u%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.734994%2C49.404162%5D%2C%5B8.70753%2C49.427%5D%2C%5B8.73998%2C49.434%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D&timeout=97",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "office"
+            },
+            {
+              "key": "filter",
+              "value": "addr%3Ahousenumber%3D*+and+geometry%3Apoint+or+area%3A%281.0+..+1E6%29"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22kxT%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.710333%2C49.408%5D%2C%5B8.73070%2C49.410%5D%2C%5B8.741%2C49.438%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22u%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.734994%2C49.404162%5D%2C%5B8.70753%2C49.427%5D%2C%5B8.73998%2C49.434%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            },
+            {
+              "key": "timeout",
+              "value": "97"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1ji7a0aytujp3_lengthGroupByBoundaryGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/groupBy/boundary/groupBy/tag?groupByValues=tower%2Cschool&bboxes=BAghT%3A8.66770%2C49.429809%2C8.754125%2C49.384%7Cj%3A8.68924%2C49.421%2C8.75828%2C49.396%7CEhxlK%3A8.67678%2C49.42157%2C8.755566%2C49.384%7CsIBCc%3A8.6757%2C49.401%2C8.70117%2C49.3869&groupByKey=highway&keys=highway&values=footway&showMetadata=false&timeout=44",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "tower%2Cschool"
+            },
+            {
+              "key": "bboxes",
+              "value": "BAghT%3A8.66770%2C49.429809%2C8.754125%2C49.384%7Cj%3A8.68924%2C49.421%2C8.75828%2C49.396%7CEhxlK%3A8.67678%2C49.42157%2C8.755566%2C49.384%7CsIBCc%3A8.6757%2C49.401%2C8.70117%2C49.3869"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "footway"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "timeout",
+              "value": "44"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hr5vsk9ud44z_lengthGroupByKey",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/groupBy/key?filter=oneway%21%3D*+and+id%3A%281+..+9999%29&format=csv&showMetadata=no&time=2013-02-06&timeout=36&groupByKeys=addr%3Acity%2Cdestination&bcircles=TFW%3A8.73417%2C49.429%2C6",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "groupBy",
+            "key"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "oneway%21%3D*+and+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2013-02-06"
+            },
+            {
+              "key": "timeout",
+              "value": "36"
+            },
+            {
+              "key": "groupByKeys",
+              "value": "addr%3Acity%2Cdestination"
+            },
+            {
+              "key": "bcircles",
+              "value": "TFW%3A8.73417%2C49.429%2C6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_u803xdxxbtwz_lengthGroupByKey1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/groupBy/key?keys=highway&values=primary&format=csv&time=2010-06-03&bpolys=UeK%3A8.704561%2C49.403252%2C8.71963%2C49.414%2C8.716%2C49.4308%2C8.7023%2C49.42997%2C8.704561%2C49.403252%7Cv%3A8.704561%2C49.403252%2C8.706%2C49.400%2C8.728%2C49.422%2C8.733%2C49.408%2C8.704561%2C49.403252&timeout=69&groupByKeys=lit%2Clanduse%2Caddr%3Apostcode",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "groupBy",
+            "key"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "primary"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "time",
+              "value": "2010-06-03"
+            },
+            {
+              "key": "bpolys",
+              "value": "UeK%3A8.704561%2C49.403252%2C8.71963%2C49.414%2C8.716%2C49.4308%2C8.7023%2C49.42997%2C8.704561%2C49.403252%7Cv%3A8.704561%2C49.403252%2C8.706%2C49.400%2C8.728%2C49.422%2C8.733%2C49.408%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "69"
+            },
+            {
+              "key": "groupByKeys",
+              "value": "lit%2Clanduse%2Caddr%3Apostcode"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_ure1hrxjbqya_lengthGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/groupBy/tag?bboxes=XNc%3A8.6745%2C49.427%2C8.70508%2C49.399%7CceH%3A8.6623%2C49.414%2C8.734%2C49.384%7CvAXfQ%3A8.651%2C49.42921%2C8.700%2C49.381&groupByKey=building&showMetadata=no",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "XNc%3A8.6745%2C49.427%2C8.70508%2C49.399%7CceH%3A8.6623%2C49.414%2C8.734%2C49.384%7CvAXfQ%3A8.651%2C49.42921%2C8.700%2C49.381"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1k1wpn1liyusj_lengthGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/groupBy/tag?groupByValues=service%2Cprimary_link%2Celevator&groupByKey=highway&keys=highway&values=path&showMetadata=true&time=2008-02-20&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22Y%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.732%2C49.4059%5D%2C%5B8.700%2C49.4212%5D%2C%5B8.703%2C49.431%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "service%2Cprimary_link%2Celevator"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "path"
+            },
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "time",
+              "value": "2008-02-20"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22Y%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.732%2C49.4059%5D%2C%5B8.700%2C49.4212%5D%2C%5B8.703%2C49.431%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1iauu9xteovad_lengthGroupByType",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/groupBy/type?bboxes=DG%3A8.698%2C49.416587%2C8.722%2C49.389%7CzWUTj%3A8.668%2C49.420%2C8.744%2C49.389&keys=highway&values=bus_stop&format=csv&time=2009-12-24&timeout=55",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "DG%3A8.698%2C49.416587%2C8.722%2C49.389%7CzWUTj%3A8.668%2C49.420%2C8.744%2C49.389"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "bus_stop"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "time",
+              "value": "2009-12-24"
+            },
+            {
+              "key": "timeout",
+              "value": "55"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_u7u4eauorr6t_lengthGroupByType1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/groupBy/type?keys=highway&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22UU%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.719%2C49.431011%5D%2C%5B8.748%2C49.404%5D%2C%5B8.724%2C49.4009%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22UU%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.719%2C49.431011%5D%2C%5B8.748%2C49.404%5D%2C%5B8.724%2C49.4009%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_sok48yrocgfo_lengthRatio",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/ratio?filter=building%3D*&format=geojson&filter2=maxspeed%3D*+and+geometry%3Apolygon+and+id%3A%281+..+9999%29&bcircles=g%3A8.7269%2C49.411%2C33",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "ratio"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "building%3D*"
+            },
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "filter2",
+              "value": "maxspeed%3D*+and+geometry%3Apolygon+and+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "bcircles",
+              "value": "g%3A8.7269%2C49.411%2C33"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_to4mf5pefvw1_lengthRatio1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/ratio?keys=highway&types2=line%2Cpolygon%2Cother&values=traffic_mirror&showMetadata=false&filter2=type%3D*+or+geometry%3Aline+and+id%3A%281+..+9999%29&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22Iw%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7346%2C49.411538%5D%2C%5B8.70457%2C49.410578%5D%2C%5B8.705%2C49.42926%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D&keys2=highway&timeout=44&values2=service",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "ratio"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "types2",
+              "value": "line%2Cpolygon%2Cother"
+            },
+            {
+              "key": "values",
+              "value": "traffic_mirror"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "filter2",
+              "value": "type%3D*+or+geometry%3Aline+and+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22Iw%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7346%2C49.411538%5D%2C%5B8.70457%2C49.410578%5D%2C%5B8.705%2C49.42926%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            },
+            {
+              "key": "keys2",
+              "value": "highway"
+            },
+            {
+              "key": "timeout",
+              "value": "44"
+            },
+            {
+              "key": "values2",
+              "value": "service"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_toa4sudqq7oh_lengthRatioGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/ratio/groupBy/boundary?filter=smoothness%3D*+or+not+id%3A%281+..+9999%29&showMetadata=false&keys2=highway&bcircles=8.709%2C49.4351%2C4",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "ratio",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "smoothness%3D*+or+not+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "keys2",
+              "value": "highway"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.709%2C49.4351%2C4"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_s4p39kegnepl_lengthRatioGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/length/ratio/groupBy/boundary?filter=tracktype%3D*+or+area%3A%281.0+..+1E6%29&bboxes=WGie%3A8.672%2C49.4271%2C8.755%2C49.380%7CfSF%3A8.673%2C49.40364%2C8.7370%2C49.3822&types2=line%2C&showMetadata=false",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "length",
+            "ratio",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "tracktype%3D*+or+area%3A%281.0+..+1E6%29"
+            },
+            {
+              "key": "bboxes",
+              "value": "WGie%3A8.672%2C49.4271%2C8.755%2C49.380%7CfSF%3A8.673%2C49.40364%2C8.7370%2C49.3822"
+            },
+            {
+              "key": "types2",
+              "value": "line%2C"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jyd93oybr2ar_perimeter",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter?filter=oneway%21%3D*+or+not+area%3A%281.0+..+1E6%29&format=json&time=2013-01-25&bcircles=8.748%2C49.407%2C46",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "oneway%21%3D*+or+not+area%3A%281.0+..+1E6%29"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "time",
+              "value": "2013-01-25"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.748%2C49.407%2C46"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hraynuvlls1d_perimeter1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter?showMetadata=false&time=2012-09-20&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22NsIfQ%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.70733%2C49.4043%5D%2C%5B8.7043%2C49.4160%5D%2C%5B8.715286%2C49.412747%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22eu%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7220%2C49.4044%5D%2C%5B8.738342%2C49.4301%5D%2C%5B8.706%2C49.4262%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22L%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7380%2C49.4125%5D%2C%5B8.706%2C49.4140%5D%2C%5B8.70194%2C49.406227%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter"
+          ],
+          "query": [
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "time",
+              "value": "2012-09-20"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22NsIfQ%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.70733%2C49.4043%5D%2C%5B8.7043%2C49.4160%5D%2C%5B8.715286%2C49.412747%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22eu%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7220%2C49.4044%5D%2C%5B8.738342%2C49.4301%5D%2C%5B8.706%2C49.4262%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22L%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.7380%2C49.4125%5D%2C%5B8.706%2C49.4140%5D%2C%5B8.70194%2C49.406227%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_s163vpqcngom_perimeterDensity",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/density?showMetadata=false&time=2009-12-31&bcircles=rYecy%3A8.727%2C49.4112%2C625%7CTcpOr%3A8.747%2C49.422%2C6%7CQazrH%3A8.733918%2C49.4071%2C79%7CvpuYp%3A8.7118%2C49.410%2C27",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "density"
+          ],
+          "query": [
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "time",
+              "value": "2009-12-31"
+            },
+            {
+              "key": "bcircles",
+              "value": "rYecy%3A8.727%2C49.4112%2C625%7CTcpOr%3A8.747%2C49.422%2C6%7CQazrH%3A8.733918%2C49.4071%2C79%7CvpuYp%3A8.7118%2C49.410%2C27"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_qhw5rbsn4px1_perimeterDensity1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/density?keys=highway&values=platform&format=csv&time=2012-05-01&timeout=62&bcircles=8.737%2C49.423%2C8%7C8.737%2C49.409%2C725%7C8.732%2C49.422799%2C6",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "density"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "platform"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "time",
+              "value": "2012-05-01"
+            },
+            {
+              "key": "timeout",
+              "value": "62"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.737%2C49.423%2C8%7C8.737%2C49.409%2C725%7C8.732%2C49.422799%2C6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_ts57gkaaivjq_perimeterDensityGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/density/groupBy/boundary?keys=highway&values=platform&showMetadata=yes&time=2008-08-23&bpolys=d%3A8.704561%2C49.403252%2C8.722%2C49.439187%2C8.712%2C49.404%2C8.709%2C49.413%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "density",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "platform"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "time",
+              "value": "2008-08-23"
+            },
+            {
+              "key": "bpolys",
+              "value": "d%3A8.704561%2C49.403252%2C8.722%2C49.439187%2C8.712%2C49.404%2C8.709%2C49.413%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1k2519tl9zfao_perimeterDensityGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/density/groupBy/boundary?keys=highway&values=unclassified&showMetadata=no&time=2011-07-09&bpolys=vaeZA%3A8.704561%2C49.403252%2C8.739%2C49.4231%2C8.7128%2C49.408521%2C8.7048%2C49.4338%2C8.704561%2C49.403252%7CS%3A8.704561%2C49.403252%2C8.7287%2C49.4084%2C8.74763%2C49.435%2C8.705055%2C49.433%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "density",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "unclassified"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2011-07-09"
+            },
+            {
+              "key": "bpolys",
+              "value": "vaeZA%3A8.704561%2C49.403252%2C8.739%2C49.4231%2C8.7128%2C49.408521%2C8.7048%2C49.4338%2C8.704561%2C49.403252%7CS%3A8.704561%2C49.403252%2C8.7287%2C49.4084%2C8.74763%2C49.435%2C8.705055%2C49.433%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_urmc1vaig40x_perimeterDensityGroupByBoundaryGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/density/groupBy/boundary/groupBy/tag?groupByValues=garage&filter=foot%21%3D*+and+area%3A%281.0+..+1E6%29&bboxes=DLPK%3A8.6878%2C49.42269%2C8.7330%2C49.396%7CO%3A8.6866%2C49.408%2C8.731%2C49.3812&groupByKey=building&timeout=74",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "density",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "garage"
+            },
+            {
+              "key": "filter",
+              "value": "foot%21%3D*+and+area%3A%281.0+..+1E6%29"
+            },
+            {
+              "key": "bboxes",
+              "value": "DLPK%3A8.6878%2C49.42269%2C8.7330%2C49.396%7CO%3A8.6866%2C49.408%2C8.731%2C49.3812"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "timeout",
+              "value": "74"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1h7zaslyphe90_perimeterDensityGroupByBoundaryGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/density/groupBy/boundary/groupBy/tag?groupByValues=cycleway&filter=turn%3D*+or+id%3A%281+..+9999%29&bboxes=8.6894%2C49.4278%2C8.70424%2C49.395%7C8.688%2C49.4029%2C8.701416%2C49.388%7C8.67867%2C49.4077%2C8.709%2C49.382&groupByKey=highway&format=json&showMetadata=yes&time=2015-11-22",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "density",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "cycleway"
+            },
+            {
+              "key": "filter",
+              "value": "turn%3D*+or+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "bboxes",
+              "value": "8.6894%2C49.4278%2C8.70424%2C49.395%7C8.688%2C49.4029%2C8.701416%2C49.388%7C8.67867%2C49.4077%2C8.709%2C49.382"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "time",
+              "value": "2015-11-22"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_qxw4x939e1bs_perimeterDensityGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/density/groupBy/tag?groupByValues=give_way%2Csynagogue%2Cstation&filter=lanes%3Abackward%21%3D*+or+type%3Arelation&groupByKey=building&format=geojson&time=2014-09-19&timeout=22&bcircles=8.7414%2C49.4198%2C6%7C8.701%2C49.405%2C5%7C8.732%2C49.434%2C815478014",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "density",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "give_way%2Csynagogue%2Cstation"
+            },
+            {
+              "key": "filter",
+              "value": "lanes%3Abackward%21%3D*+or+type%3Arelation"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "time",
+              "value": "2014-09-19"
+            },
+            {
+              "key": "timeout",
+              "value": "22"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.7414%2C49.4198%2C6%7C8.701%2C49.405%2C5%7C8.732%2C49.434%2C815478014"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_vbhdkcbl4rc6_perimeterDensityGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/density/groupBy/tag?groupByValues=give_way%2Croof%2Cprimary&groupByKey=highway&keys=highway&values=track&showMetadata=false&time=2016-08-08&timeout=99&bcircles=8.7304%2C49.407376%2C2",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "density",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "give_way%2Croof%2Cprimary"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "track"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "time",
+              "value": "2016-08-08"
+            },
+            {
+              "key": "timeout",
+              "value": "99"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.7304%2C49.407376%2C2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jyjclvr1606b_perimeterDensityGroupByType",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/density/groupBy/type?bboxes=F%3A8.6623%2C49.4036%2C8.707%2C49.380%7CIMNY%3A8.650%2C49.409%2C8.751%2C49.3917%7CSx%3A8.667526%2C49.41475%2C8.7400%2C49.384%7CG%3A8.662%2C49.401114%2C8.730%2C49.396&showMetadata=no",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "density",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "F%3A8.6623%2C49.4036%2C8.707%2C49.380%7CIMNY%3A8.650%2C49.409%2C8.751%2C49.3917%7CSx%3A8.667526%2C49.41475%2C8.7400%2C49.384%7CG%3A8.662%2C49.401114%2C8.730%2C49.396"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1huxor4yzlx7l_perimeterDensityGroupByType1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/density/groupBy/type?filter=highway%3D*&timeout=63&bcircles=rOqm%3A8.711880%2C49.402022%2C91",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "density",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "highway%3D*"
+            },
+            {
+              "key": "timeout",
+              "value": "63"
+            },
+            {
+              "key": "bcircles",
+              "value": "rOqm%3A8.711880%2C49.402022%2C91"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_ts1vhx1vt6ib_perimeterGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/groupBy/boundary?filter=foot%3D*+or+type%3Away+or+length%3A%28+..+100%29&bboxes=wK%3A8.663%2C49.422%2C8.743%2C49.380&time=2012-08-05&timeout=72",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "foot%3D*+or+type%3Away+or+length%3A%28+..+100%29"
+            },
+            {
+              "key": "bboxes",
+              "value": "wK%3A8.663%2C49.422%2C8.743%2C49.380"
+            },
+            {
+              "key": "time",
+              "value": "2012-08-05"
+            },
+            {
+              "key": "timeout",
+              "value": "72"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hrj9wpcg1ir6_perimeterGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/groupBy/boundary?filter=building%21%3D*+and+length%3A%28+..+100%29&time=2008-12-16&bpolys=8.704561%2C49.403252%2C8.725934%2C49.422%2C8.711%2C49.425%2C8.723%2C49.43229%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.738%2C49.41136%2C8.723%2C49.429%2C8.7045%2C49.4106%2C8.704561%2C49.403252&timeout=76",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "building%21%3D*+and+length%3A%28+..+100%29"
+            },
+            {
+              "key": "time",
+              "value": "2008-12-16"
+            },
+            {
+              "key": "bpolys",
+              "value": "8.704561%2C49.403252%2C8.725934%2C49.422%2C8.711%2C49.425%2C8.723%2C49.43229%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.738%2C49.41136%2C8.723%2C49.429%2C8.7045%2C49.4106%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "76"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_to1uc5b94qjq_perimeterGroupByBoundaryGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/groupBy/boundary/groupBy/tag?bboxes=8.68289%2C49.401%2C8.719%2C49.395%7C8.68557%2C49.419%2C8.7380%2C49.382%7C8.68908%2C49.416%2C8.737%2C49.391&groupByKey=building&keys=highway&values=elevator&time=2013-10-26&timeout=94",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "8.68289%2C49.401%2C8.719%2C49.395%7C8.68557%2C49.419%2C8.7380%2C49.382%7C8.68908%2C49.416%2C8.737%2C49.391"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "elevator"
+            },
+            {
+              "key": "time",
+              "value": "2013-10-26"
+            },
+            {
+              "key": "timeout",
+              "value": "94"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t4vncpxf4ktf_perimeterGroupByBoundaryGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/groupBy/boundary/groupBy/tag?groupByKey=building&keys=highway&values=secondary&format=csv&bpolys=Ifl%3A8.704561%2C49.403252%2C8.7127%2C49.401%2C8.706392%2C49.4026%2C8.73467%2C49.438%2C8.704561%2C49.403252%7Ci%3A8.704561%2C49.403252%2C8.70222%2C49.43013%2C8.70443%2C49.402%2C8.74746%2C49.416%2C8.704561%2C49.403252%7Cb%3A8.704561%2C49.403252%2C8.74977%2C49.421034%2C8.70995%2C49.43990%2C8.704%2C49.433%2C8.704561%2C49.403252&timeout=63",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "groupBy",
+            "boundary",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "secondary"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "bpolys",
+              "value": "Ifl%3A8.704561%2C49.403252%2C8.7127%2C49.401%2C8.706392%2C49.4026%2C8.73467%2C49.438%2C8.704561%2C49.403252%7Ci%3A8.704561%2C49.403252%2C8.70222%2C49.43013%2C8.70443%2C49.402%2C8.74746%2C49.416%2C8.704561%2C49.403252%7Cb%3A8.704561%2C49.403252%2C8.74977%2C49.421034%2C8.70995%2C49.43990%2C8.704%2C49.433%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "63"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_s1h7rhilku9c_perimeterGroupByKey",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/groupBy/key?keys=highway&values=speed_camera&format=geojson&bpolys=8.704561%2C49.403252%2C8.748603%2C49.41964%2C8.731%2C49.42598%2C8.701%2C49.404%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.7366%2C49.417%2C8.7043%2C49.403%2C8.7093%2C49.4112%2C8.704561%2C49.403252&timeout=59&groupByKeys=maxspeed%2Cnetwork%2Csmoothness",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "groupBy",
+            "key"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "speed_camera"
+            },
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "bpolys",
+              "value": "8.704561%2C49.403252%2C8.748603%2C49.41964%2C8.731%2C49.42598%2C8.701%2C49.404%2C8.704561%2C49.403252%7C8.704561%2C49.403252%2C8.7366%2C49.417%2C8.7043%2C49.403%2C8.7093%2C49.4112%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "59"
+            },
+            {
+              "key": "groupByKeys",
+              "value": "maxspeed%2Cnetwork%2Csmoothness"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hbg0pmnlq6uu_perimeterGroupByKey1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/groupBy/key?filter=name%3D*+and+length%3A%28+..+100%29&time=2018-01-28&groupByKeys=addr%3Acountry%2Clit&bcircles=8.743571%2C49.430%2C3%7C8.71664%2C49.434%2C6%7C8.726%2C49.422013%2C1%7C8.7050%2C49.41506%2C9225008069",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "groupBy",
+            "key"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "name%3D*+and+length%3A%28+..+100%29"
+            },
+            {
+              "key": "time",
+              "value": "2018-01-28"
+            },
+            {
+              "key": "groupByKeys",
+              "value": "addr%3Acountry%2Clit"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.743571%2C49.430%2C3%7C8.71664%2C49.434%2C6%7C8.726%2C49.422013%2C1%7C8.7050%2C49.41506%2C9225008069"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hbfzgt1x4h2b_perimeterGroupByTag",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/groupBy/tag?groupByKey=highway&keys=highway&format=json&timeout=57&bcircles=Hyx%3A8.742%2C49.4297%2C7",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "timeout",
+              "value": "57"
+            },
+            {
+              "key": "bcircles",
+              "value": "Hyx%3A8.742%2C49.4297%2C7"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_skxu4ti6y3w5_perimeterGroupByTag1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/groupBy/tag?groupByValues=speed_camera%2Cpedestrian%2Ctrack&bboxes=xALJ%3A8.682%2C49.418248%2C8.746%2C49.3869%7CWlJ%3A8.654%2C49.4275%2C8.741511%2C49.397%7CWs%3A8.696%2C49.4005%2C8.742%2C49.3899&groupByKey=highway&keys=highway&showMetadata=true&time=2010-03-08",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "speed_camera%2Cpedestrian%2Ctrack"
+            },
+            {
+              "key": "bboxes",
+              "value": "xALJ%3A8.682%2C49.418248%2C8.746%2C49.3869%7CWlJ%3A8.654%2C49.4275%2C8.741511%2C49.397%7CWs%3A8.696%2C49.4005%2C8.742%2C49.3899"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "time",
+              "value": "2010-03-08"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1h84uekin0w8j_perimeterGroupByType",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/groupBy/type?filter=maxspeed%3D*+and+not+id%3A%281+..+9999%29&time=2009-02-21&timeout=29&bcircles=nFCcd%3A8.719%2C49.4224%2C56",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "maxspeed%3D*+and+not+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "time",
+              "value": "2009-02-21"
+            },
+            {
+              "key": "timeout",
+              "value": "29"
+            },
+            {
+              "key": "bcircles",
+              "value": "nFCcd%3A8.719%2C49.4224%2C56"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_us3ik8m3c9k4_perimeterGroupByType1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/groupBy/type?filter=destination%3D*+and+geometry%3Apolygon&format=json&bcircles=Qd%3A8.7197%2C49.43469%2C8%7Cj%3A8.708648%2C49.410%2C86%7CBng%3A8.737029%2C49.4084%2C6%7Cky%3A8.738%2C49.41452%2C770898518668",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "destination%3D*+and+geometry%3Apolygon"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "bcircles",
+              "value": "Qd%3A8.7197%2C49.43469%2C8%7Cj%3A8.708648%2C49.410%2C86%7CBng%3A8.737029%2C49.4084%2C6%7Cky%3A8.738%2C49.41452%2C770898518668"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_s164cfhpq7ua_perimeterRatio",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/ratio?filter=lit%3D*+or+type%3Anode&bboxes=8.676%2C49.400%2C8.748%2C49.381%7C8.663%2C49.4134%2C8.7395%2C49.3932&types2=way%2C&showMetadata=yes&keys2=highway",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "ratio"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "lit%3D*+or+type%3Anode"
+            },
+            {
+              "key": "bboxes",
+              "value": "8.676%2C49.400%2C8.748%2C49.381%7C8.663%2C49.4134%2C8.7395%2C49.3932"
+            },
+            {
+              "key": "types2",
+              "value": "way%2C"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "keys2",
+              "value": "highway"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jylmu9crn48h_perimeterRatio1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/ratio?keys=highway&types2=point%2Cline%2Cother&values=secondary_link&format=json&filter2=source%3Amaxspeed%21%3D*+or+not+area%3A%281.0+..+1E6%29&bpolys=j%3A8.704561%2C49.403252%2C8.721%2C49.42988%2C8.709%2C49.4307%2C8.72765%2C49.40688%2C8.704561%2C49.403252%7CkPM%3A8.704561%2C49.403252%2C8.735%2C49.431%2C8.7466%2C49.406%2C8.729%2C49.432%2C8.704561%2C49.403252%7CBz%3A8.704561%2C49.403252%2C8.7105%2C49.43269%2C8.73841%2C49.4067%2C8.7029%2C49.4385%2C8.704561%2C49.403252&keys2=highway&timeout=53&values2=traffic_signals",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "ratio"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "types2",
+              "value": "point%2Cline%2Cother"
+            },
+            {
+              "key": "values",
+              "value": "secondary_link"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "filter2",
+              "value": "source%3Amaxspeed%21%3D*+or+not+area%3A%281.0+..+1E6%29"
+            },
+            {
+              "key": "bpolys",
+              "value": "j%3A8.704561%2C49.403252%2C8.721%2C49.42988%2C8.709%2C49.4307%2C8.72765%2C49.40688%2C8.704561%2C49.403252%7CkPM%3A8.704561%2C49.403252%2C8.735%2C49.431%2C8.7466%2C49.406%2C8.729%2C49.432%2C8.704561%2C49.403252%7CBz%3A8.704561%2C49.403252%2C8.7105%2C49.43269%2C8.73841%2C49.4067%2C8.7029%2C49.4385%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "keys2",
+              "value": "highway"
+            },
+            {
+              "key": "timeout",
+              "value": "53"
+            },
+            {
+              "key": "values2",
+              "value": "traffic_signals"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jyg2u3sxtir8_perimeterRatioGroupByBoundary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/ratio/groupBy/boundary?filter=addr%3Astreet%21%3D*+and+id%3A%281+..+9999%29&bboxes=y%3A8.677445%2C49.429%2C8.729%2C49.386&showMetadata=true&filter2=lit%21%3D*+and+not+length%3A%28+..+100%29&keys2=highway&values2=track",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "ratio",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "addr%3Astreet%21%3D*+and+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "bboxes",
+              "value": "y%3A8.677445%2C49.429%2C8.729%2C49.386"
+            },
+            {
+              "key": "showMetadata",
+              "value": "true"
+            },
+            {
+              "key": "filter2",
+              "value": "lit%21%3D*+and+not+length%3A%28+..+100%29"
+            },
+            {
+              "key": "keys2",
+              "value": "highway"
+            },
+            {
+              "key": "values2",
+              "value": "track"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_uvgwdr9gzrdw_perimeterRatioGroupByBoundary1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/elements/perimeter/ratio/groupBy/boundary?filter=oneway%3D*+or+not+geometry%3Aline+and+length%3A%28+..+100%29&types2=polygon%2Cother&time=2016-09-20&keys2=highway&values2=stop&bcircles=WY%3A8.704%2C49.406%2C2",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "elements",
+            "perimeter",
+            "ratio",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "oneway%3D*+or+not+geometry%3Aline+and+length%3A%28+..+100%29"
+            },
+            {
+              "key": "types2",
+              "value": "polygon%2Cother"
+            },
+            {
+              "key": "time",
+              "value": "2016-09-20"
+            },
+            {
+              "key": "keys2",
+              "value": "highway"
+            },
+            {
+              "key": "values2",
+              "value": "stop"
+            },
+            {
+              "key": "bcircles",
+              "value": "WY%3A8.704%2C49.406%2C2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_u7rcjwmrllk2_count2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count?keys=highway&showMetadata=yes&bpolys=iNUKc%3A8.704561%2C49.403252%2C8.739631%2C49.439%2C8.704%2C49.4194%2C8.73218%2C49.423%2C8.704561%2C49.403252&timeout=33",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "bpolys",
+              "value": "iNUKc%3A8.704561%2C49.403252%2C8.739631%2C49.439%2C8.704%2C49.4194%2C8.73218%2C49.423%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "33"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jy4y8taevewp_count3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count?keys=highway&values=path&format=csv&bcircles=8.7110%2C49.414897%2C1%7C8.70254%2C49.437%2C77%7C8.736%2C49.43428%2C7%7C8.720%2C49.42843%2C2",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "path"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.7110%2C49.414897%2C1%7C8.70254%2C49.437%2C77%7C8.736%2C49.43428%2C7%7C8.720%2C49.42843%2C2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1k25lma7egl6g_countDensity2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/density?keys=highway&values=path&format=geojson&bpolys=O%3A8.704561%2C49.403252%2C8.742%2C49.4257%2C8.7140%2C49.437613%2C8.721%2C49.4202%2C8.704561%2C49.403252",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "density"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "path"
+            },
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "bpolys",
+              "value": "O%3A8.704561%2C49.403252%2C8.742%2C49.4257%2C8.7140%2C49.437613%2C8.721%2C49.4202%2C8.704561%2C49.403252"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_s4p375l1z6lx_countDensity3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/density?format=geojson&showMetadata=no&bcircles=8.745%2C49.40886%2C3%7C8.739%2C49.410%2C2%7C8.709%2C49.406558%2C402%7C8.719%2C49.4095%2C6751804620",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "density"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.745%2C49.40886%2C3%7C8.739%2C49.410%2C2%7C8.709%2C49.406558%2C402%7C8.719%2C49.4095%2C6751804620"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_vf46ug0yajw5_countDensityGroupByBoundary2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/density/groupBy/boundary?keys=highway&values=track&showMetadata=no&time=2010-10-31&bpolys=v%3A8.704561%2C49.403252%2C8.7161%2C49.4214%2C8.708%2C49.424%2C8.704566%2C49.4041%2C8.704561%2C49.403252&timeout=69",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "density",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "track"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2010-10-31"
+            },
+            {
+              "key": "bpolys",
+              "value": "v%3A8.704561%2C49.403252%2C8.7161%2C49.4214%2C8.708%2C49.424%2C8.704566%2C49.4041%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "69"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_u7zn3li5hizn_countDensityGroupByBoundary3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/density/groupBy/boundary?filter=addr%3Acity%3D*+and+type%3Arelation+and+id%3A%281+..+9999%29&format=json&time=2017-12-08&bcircles=e%3A8.7020%2C49.431005%2C2%7CGQAJ%3A8.717%2C49.402%2C34%7CBS%3A8.74691%2C49.4047%2C7",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "density",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "addr%3Acity%3D*+and+type%3Arelation+and+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "time",
+              "value": "2017-12-08"
+            },
+            {
+              "key": "bcircles",
+              "value": "e%3A8.7020%2C49.431005%2C2%7CGQAJ%3A8.717%2C49.402%2C34%7CBS%3A8.74691%2C49.4047%2C7"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_qxqkacornl13_countDensityGroupByTag2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/density/groupBy/tag?bboxes=M%3A8.655%2C49.400774%2C8.751%2C49.3912%7CJ%3A8.671734%2C49.403%2C8.736%2C49.397%7CRYR%3A8.675%2C49.417%2C8.719668%2C49.395%7CP%3A8.67550%2C49.427682%2C8.7156%2C49.396&groupByKey=highway&keys=highway&values=cycleway&format=geojson&showMetadata=no&time=2016-11-22",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "density",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "bboxes",
+              "value": "M%3A8.655%2C49.400774%2C8.751%2C49.3912%7CJ%3A8.671734%2C49.403%2C8.736%2C49.397%7CRYR%3A8.675%2C49.417%2C8.719668%2C49.395%7CP%3A8.67550%2C49.427682%2C8.7156%2C49.396"
+            },
+            {
+              "key": "groupByKey",
+              "value": "highway"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "cycleway"
+            },
+            {
+              "key": "format",
+              "value": "geojson"
+            },
+            {
+              "key": "showMetadata",
+              "value": "no"
+            },
+            {
+              "key": "time",
+              "value": "2016-11-22"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_u8dfmci6c6cx_countDensityGroupByTag3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/density/groupBy/tag?groupByValues=secondary_link&bboxes=8.66738%2C49.410%2C8.751%2C49.3842%7C8.658%2C49.406%2C8.745%2C49.385%7C8.679%2C49.418401%2C8.741%2C49.386%7C8.656%2C49.402%2C8.722881%2C49.385&groupByKey=building&keys=highway&format=csv&showMetadata=yes&time=2017-01-21",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "density",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "secondary_link"
+            },
+            {
+              "key": "bboxes",
+              "value": "8.66738%2C49.410%2C8.751%2C49.3842%7C8.658%2C49.406%2C8.745%2C49.385%7C8.679%2C49.418401%2C8.741%2C49.386%7C8.656%2C49.402%2C8.722881%2C49.385"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "time",
+              "value": "2017-01-21"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_s4mu4onjqq1v_countDensityGroupByType2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/density/groupBy/type?keys=highway&values=pedestrian&timeout=57&bcircles=8.709%2C49.411%2C981%7C8.74226%2C49.420%2C2389507382%7C8.7188%2C49.405%2C809423663",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "density",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "pedestrian"
+            },
+            {
+              "key": "timeout",
+              "value": "57"
+            },
+            {
+              "key": "bcircles",
+              "value": "8.709%2C49.411%2C981%7C8.74226%2C49.420%2C2389507382%7C8.7188%2C49.405%2C809423663"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_t4vnnzzeikvn_countDensityGroupByType3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/density/groupBy/type?keys=highway&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22Ke%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.70355%2C49.401466%5D%2C%5B8.714%2C49.4337%5D%2C%5B8.704025%2C49.42922%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22V%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.711%2C49.43341%5D%2C%5B8.740%2C49.4146%5D%2C%5B8.716%2C49.43481%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22BGe%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.738%2C49.41309%5D%2C%5B8.706%2C49.401%5D%2C%5B8.704600%2C49.421%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D&timeout=91",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "density",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22Ke%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.70355%2C49.401466%5D%2C%5B8.714%2C49.4337%5D%2C%5B8.704025%2C49.42922%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22V%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.711%2C49.43341%5D%2C%5B8.740%2C49.4146%5D%2C%5B8.716%2C49.43481%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22BGe%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.738%2C49.41309%5D%2C%5B8.706%2C49.401%5D%2C%5B8.704600%2C49.421%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            },
+            {
+              "key": "timeout",
+              "value": "91"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_qhvntepixc8h_countGroupByBoundary2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/groupBy/boundary?filter=smoothness%21%3D*+and+type%3Anode+and+length%3A%28+..+100%29&bboxes=s%3A8.663%2C49.40747%2C8.744%2C49.386&format=csv&time=2015-11-30",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "smoothness%21%3D*+and+type%3Anode+and+length%3A%28+..+100%29"
+            },
+            {
+              "key": "bboxes",
+              "value": "s%3A8.663%2C49.40747%2C8.744%2C49.386"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "time",
+              "value": "2015-11-30"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_rhtw7dfdi1bk_countGroupByBoundary3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/groupBy/boundary?filter=highway+in+%28secondary%2Cpath%2Cunclassified%2Ctrack%2Cprimary%2Cresidential%2Ccycleway%2Cservice%2Cfootway%29+and+id%3A%281+..+9999%29&format=csv&bpolys=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22IhVhb%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.705%2C49.417842%5D%2C%5B8.728186%2C49.42663%5D%2C%5B8.70615%2C49.41821%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D&timeout=40",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "groupBy",
+            "boundary"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "highway+in+%28secondary%2Cpath%2Cunclassified%2Ctrack%2Cprimary%2Cresidential%2Ccycleway%2Cservice%2Cfootway%29+and+id%3A%281+..+9999%29"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "bpolys",
+              "value": "%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22id%22%3A%22IhVhb%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B8.704561%2C49.403252%5D%2C%5B8.705%2C49.417842%5D%2C%5B8.728186%2C49.42663%5D%2C%5B8.70615%2C49.41821%5D%2C%5B8.704561%2C49.403252%5D%5D%5D%7D%7D%5D%7D"
+            },
+            {
+              "key": "timeout",
+              "value": "40"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1hrotxao9bnfo_countGroupByKey2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/groupBy/key?keys=highway&values=unclassified&format=json&showMetadata=false&bpolys=yQF%3A8.704561%2C49.403252%2C8.74609%2C49.411%2C8.705%2C49.4044%2C8.704954%2C49.412554%2C8.704561%2C49.403252%7CL%3A8.704561%2C49.403252%2C8.713486%2C49.434%2C8.74871%2C49.401%2C8.720%2C49.4039%2C8.704561%2C49.403252%7CmV%3A8.704561%2C49.403252%2C8.734%2C49.425%2C8.72634%2C49.409%2C8.702%2C49.41086%2C8.704561%2C49.403252&timeout=87&groupByKeys=source%3Amaxspeed%2Caddr%3Apostcode%2Cturn",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "groupBy",
+            "key"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "unclassified"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "bpolys",
+              "value": "yQF%3A8.704561%2C49.403252%2C8.74609%2C49.411%2C8.705%2C49.4044%2C8.704954%2C49.412554%2C8.704561%2C49.403252%7CL%3A8.704561%2C49.403252%2C8.713486%2C49.434%2C8.74871%2C49.401%2C8.720%2C49.4039%2C8.704561%2C49.403252%7CmV%3A8.704561%2C49.403252%2C8.734%2C49.425%2C8.72634%2C49.409%2C8.702%2C49.41086%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "87"
+            },
+            {
+              "key": "groupByKeys",
+              "value": "source%3Amaxspeed%2Caddr%3Apostcode%2Cturn"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1ibh3zi8m8yep_countGroupByKey3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/groupBy/key?filter=turn%3D*+or+area%3A%281.0+..+1E6%29&bboxes=8.661%2C49.4293%2C8.70910%2C49.381&format=json&time=2010-09-29&timeout=59&groupByKeys=type%2Clanes%3Abackward",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "groupBy",
+            "key"
+          ],
+          "query": [
+            {
+              "key": "filter",
+              "value": "turn%3D*+or+area%3A%281.0+..+1E6%29"
+            },
+            {
+              "key": "bboxes",
+              "value": "8.661%2C49.4293%2C8.70910%2C49.381"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "time",
+              "value": "2010-09-29"
+            },
+            {
+              "key": "timeout",
+              "value": "59"
+            },
+            {
+              "key": "groupByKeys",
+              "value": "type%2Clanes%3Abackward"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jidarw4y0yn9_countGroupByTag2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/groupBy/tag?groupByValues=church%2Csynagogue&bboxes=VG%3A8.695%2C49.4033%2C8.74969%2C49.391&groupByKey=building&keys=highway&values=emergency_access_point&showMetadata=false&time=2013-10-11",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByValues",
+              "value": "church%2Csynagogue"
+            },
+            {
+              "key": "bboxes",
+              "value": "VG%3A8.695%2C49.4033%2C8.74969%2C49.391"
+            },
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "emergency_access_point"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "time",
+              "value": "2013-10-11"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1jy7rigood84k_countGroupByTag3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/groupBy/tag?groupByKey=building&keys=highway&format=csv&showMetadata=yes&bpolys=SjdNH%3A8.704561%2C49.403252%2C8.709%2C49.434%2C8.704%2C49.4263%2C8.704562%2C49.400183%2C8.704561%2C49.403252&timeout=61",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "groupBy",
+            "tag"
+          ],
+          "query": [
+            {
+              "key": "groupByKey",
+              "value": "building"
+            },
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "showMetadata",
+              "value": "yes"
+            },
+            {
+              "key": "bpolys",
+              "value": "SjdNH%3A8.704561%2C49.403252%2C8.709%2C49.434%2C8.704%2C49.4263%2C8.704562%2C49.400183%2C8.704561%2C49.403252"
+            },
+            {
+              "key": "timeout",
+              "value": "61"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1huzylnr0359g_countGroupByType2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/groupBy/type?keys=highway&values=traffic_mirror&format=csv&timeout=99&bcircles=f%3A8.746%2C49.41001%2C7%7CN%3A8.701%2C49.426929%2C2%7CtK%3A8.71113%2C49.408%2C96",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "values",
+              "value": "traffic_mirror"
+            },
+            {
+              "key": "format",
+              "value": "csv"
+            },
+            {
+              "key": "timeout",
+              "value": "99"
+            },
+            {
+              "key": "bcircles",
+              "value": "f%3A8.746%2C49.41001%2C7%7CN%3A8.701%2C49.426929%2C2%7CtK%3A8.71113%2C49.408%2C96"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test_1h7j6288jmn94_countGroupByType3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users/count/groupBy/type?keys=highway&showMetadata=false&time=2016-09-20&timeout=61&bcircles=OW%3A8.7179%2C49.426%2C6%7Cne%3A8.711%2C49.427%2C6",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "users",
+            "count",
+            "groupBy",
+            "type"
+          ],
+          "query": [
+            {
+              "key": "keys",
+              "value": "highway"
+            },
+            {
+              "key": "showMetadata",
+              "value": "false"
+            },
+            {
+              "key": "time",
+              "value": "2016-09-20"
+            },
+            {
+              "key": "timeout",
+              "value": "61"
+            },
+            {
+              "key": "bcircles",
+              "value": "OW%3A8.7179%2C49.426%2C6%7Cne%3A8.711%2C49.427%2C6"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
